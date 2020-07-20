@@ -4,10 +4,13 @@ export const Container = styled.div`
     width:100%;
     height:100%;
     margin-top: 40px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
     .box{
         width: 335px;
@@ -57,7 +60,21 @@ export const Container = styled.div`
             transition: 0.5s;
             border:2px #A8BC81 solid; 
         }
+
+       
     }
+    
+    .logo_guilu_box{
+        width: 100%;
+        display:flex;
+        justify-content: flex-end;
+
+        .logo_guilu{
+            height: 100px;
+            margin-right: 80px;    
+        }
+    }
+    
 
     @media(max-width: 1200px){
         .box{
@@ -74,6 +91,16 @@ export const Container = styled.div`
             }
 
         }
-       
+        .logo_guilu_box{
+            width: 100%;
+            display:flex;
+            justify-content: center;
+
+            .logo_guilu{
+                margin-right:0;
+            }
+        }
     }
+
+    
 `;
