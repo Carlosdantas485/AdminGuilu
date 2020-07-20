@@ -15,4 +15,8 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    p{
+        margin:0;
+    }
+
 `
