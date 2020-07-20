@@ -11,8 +11,8 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        height: 53vh;
-        width: 32vw;
+        height: 390px;
+        width: 500px;
         background: #fff;
         border-radius: 20px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -23,7 +23,8 @@ export const Container = styled.div`
             justify-content: center;
 
             img {
-                width: 16vw;
+                width: 212px;
+                height: auto;
             }
         }
 
@@ -39,28 +40,31 @@ export const Container = styled.div`
             }
 
             input {
-                background: #F2F1F1;
+                background: #f2f1f1;
                 border-radius: 10px;
                 box-sizing: border-box;
                 padding: 1rem 0.7rem;
                 border: none;
                 margin-top: 0.8rem;
 
-                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                    color:#9EAD82;
+                ::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #9ead82;
                     opacity: 1; /* Firefox */
                     font-size: 19px;
-                    }
+                }
 
-                :-ms-input-placeholder { /* Internet Explorer 10-11 */
-                    color:#9EAD82;
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #9ead82;
                     font-size: 19px;
-                    }
+                }
 
-                ::-ms-input-placeholder { /* Microsoft Edge */
-                    color:#9EAD82;
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #9ead82;
                     font-size: 19px;
-                    }
+                }
             }
         }
 
@@ -71,7 +75,7 @@ export const Container = styled.div`
             margin-top: 1.3rem;
 
             button {
-                background: #B8CF8C;
+                background: #b8cf8c;
                 color: #fff;
                 font-size: 20px;
                 font-weight: 500;
@@ -83,35 +87,34 @@ export const Container = styled.div`
             }
 
             a {
-                color: #68970E;
+                color: #68970e;
             }
         }
     }
 
     @media screen and (max-width: 1024px) {
-
         .cardDiv {
-            width: 50vw;
-
-            .logoDiv{
-                img {
-                    width: 25vw;
-                }
-            }
-        }
-
-    }
-
-
-    @media screen and (max-width: 812px) {
-
-        .cardDiv {
-            width: 50vw;
-            height: 92vh;
+            width: 420px;
+            height: 410px;
 
             .logoDiv {
                 img {
-                    width: 25vw;
+                    width: 240px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 812px) {
+        .cardDiv {
+            width: 380px;
+            height: 350px;
+
+            .logoDiv {
+                img {
+                    width: 203px;
+                    height: auto;
                 }
             }
 
@@ -134,14 +137,14 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-
         .cardDiv {
-            width: 50vw;
-            height: 30vh;
+            width: 410px;
+            height: 350px;
 
             .logoDiv {
                 img {
-                    width: 25vw;
+                    width: 203px;
+                    height: auto;
                 }
             }
 
@@ -164,23 +167,21 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 770px) {
-
         .cardDiv {
-            width: 50vw;
-            height: 35vh;
+            width: 380px;
+            height: 350px;
         }
-
     }
 
     @media screen and (max-width: 740px) {
-
         .cardDiv {
-            width: 50vw;
-            height: 92vh;
+            width: 380px;
+            height: 370px;
 
             .logoDiv {
                 img {
-                    width: 25vw;
+                    width: 200px;
+                    height: auto;
                 }
             }
 
@@ -203,23 +204,20 @@ export const Container = styled.div`
                 }
             }
         }
-
     }
 
-
     @media screen and (max-width: 415px) {
-
         .cardDiv {
             display: flex;
-            width: 70vw;
-            height: 55vh;
+            width: 400px;
+            height: 400px;
             padding: 0 2rem;
             justify-content: center;
 
-
-            .logoDiv{
+            .logoDiv {
                 img {
-                    width: 100vw;
+                    width: 200px;
+                    height: auto;
                 }
             }
 
@@ -235,7 +233,6 @@ export const Container = styled.div`
                 input {
                     width: 100%;
                 }
-
             }
 
             .btnDiv {
@@ -248,25 +245,24 @@ export const Container = styled.div`
                 }
 
                 a {
-
+                    margin-bottom: 1rem;
                 }
             }
         }
     }
 
     @media screen and (max-width: 376px) {
-
         .cardDiv {
             display: flex;
-            width: 90vw;
-            height: 48vh;
+            width: 340px;
+            height: 370px;
             padding: 0 2rem 2rem 2rem;
             justify-content: center;
 
-
-            .logoDiv{
+            .logoDiv {
                 img {
-                    width: 100vw;
+                    width: 200px;
+                    height: auto;
                 }
             }
 
@@ -282,7 +278,6 @@ export const Container = styled.div`
                 input {
                     width: 100%;
                 }
-
             }
 
             .btnDiv {
@@ -295,7 +290,7 @@ export const Container = styled.div`
                 }
 
                 a {
-
+                    margin-bottom: 1rem;
                 }
             }
         }
