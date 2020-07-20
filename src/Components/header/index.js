@@ -1,17 +1,16 @@
 import React from 'react';
 import { Header } from './styles';
+import Logo from '../../assets/logo.png';
 
 function header() {
     return (
         <Header>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quibusdam, ullam ut itaque culpa iste vel aut! Praesentium
-                    asperiores perspiciatis voluptas itaque nihil consequatur,
-                    reiciendis, corporis, ipsam ex quo animi et!
-                </p>
+            <img src={Logo} alt="logo" />
+            <div className="infoDiv">
+                <p>Nome de usuario</p>
+                <p>nomedousuario@timeguilu.com.br</p>
             </div>
+            <div className="avatar" />
         </Header>
     );
 }

@@ -1,13 +1,15 @@
 import React from 'react';
 
-// import Header from '../../Components/header';
+import Header from '../../Components/header';
 import { Container } from './styles';
 import Logo from '../../assets/logo.png';
 
 function Login() {
     return (
         <>
-            {/* <Header title="signin"> */}
+            <Header title="signin">
+                <div />
+            </Header>
             <Container>
                 <div className="cardDiv">
                     <div className="logoDiv">
@@ -20,11 +22,11 @@ function Login() {
                     </div>
                     <div className="btnDiv">
                         <button type="button">Entrar</button>
+                        {/* eslint-disable-next-line */}
                         <a>Esqueceu sua senha?</a>
                     </div>
                 </div>
             </Container>
-            {/* </Header> */}
         </>
     );
 }
