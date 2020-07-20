@@ -1,19 +1,25 @@
 import React from 'react';
 
 import { Container } from './styles';
+
  import Header from '../../Components/header/index';
  import Guilu from '../../assets/guilu_cinza.png';
+
 
 function Home() {
     return (
         <>
-            <Header><div/></Header>
+            <Header>
+                <div />
+            </Header>
 
             <Container>
 
-                <div  className="container">
-                    <div className="box">
+                <div className="container">
+                    <div className="box" id="users">
                         <h1>Usuarios</h1>
+
+
 
                         <div className="Option_Home">
                             <h2>Registrar empresa</h2>
@@ -43,7 +49,7 @@ function Home() {
                             </p>
                         </div>
                     </div>
-                    <div className="box">
+                    <div className="box" id="dashboard">
                         <h1>Dashboard</h1>
 
                         <div className="Option_Home">
@@ -58,7 +64,7 @@ function Home() {
                             </p>
                         </div>
                     </div>
-                    <div className="box">
+                    <div className="box" id="archive">
                         <h1>Arquivos</h1>
 
                         <div className="Option_Home">

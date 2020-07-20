@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         background: #B8CF8C;
 
+
     }
 
     button {
@@ -19,4 +20,4 @@ export const GlobalStyle = createGlobalStyle`
         margin:0;
     }
 
-`
+`;

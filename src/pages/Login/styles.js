@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     .cardDiv {
         display: flex;
@@ -176,7 +176,7 @@ export const Container = styled.div`
     @media screen and (max-width: 740px) {
         .cardDiv {
             width: 380px;
-            height: 370px;
+            height: 355px;
 
             .logoDiv {
                 img {
