@@ -1,9 +1,16 @@
 import React from 'react';
 
+import { useHistory } from 'react-router-dom';
 import { Container } from './styles';
 import Logo from '../../assets/logo.png';
 
 function Login() {
+    const navigation = useHistory();
+
+    function nav() {
+        navigation.push('home');
+    }
+
     return (
         <>
             <Container>
@@ -17,7 +24,9 @@ function Login() {
                         <input type="password" placeholder="Password" />
                     </div>
                     <div className="btnDiv">
-                        <button type="button">Entrar</button>
+                        <button type="button" onClick={nav}>
+                            Entrar
+                        </button>
                         {/* eslint-disable-next-line */}
                         <a>Esqueceu sua senha?</a>
                     </div>
