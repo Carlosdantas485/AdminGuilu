@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { Container } from './styles';
-// import Header from '../../Components/header';
+ import Header from '../../Components/header/index';
 
 function Home() {
     return (
         <>
-            {/* <Header> */}
+            <Header><div/></Header>
+
             <Container>
+
                 <div className="box">
                     <h1>Usuarios</h1>
 
@@ -70,7 +72,6 @@ function Home() {
                     </div>
                 </div>
             </Container>
-            {/* </Header> */}
         </>
     );
 }
