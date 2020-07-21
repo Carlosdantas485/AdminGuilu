@@ -207,6 +207,43 @@ export const Container = styled.div`
             }
         }
     }
+    .options{
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        
+        button{
+            width: 150px;
+            padding: 5px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        
+        .back{
+            background-color: #696969;
+            color: white;
+        }
+
+        .back:hover{
+            background-color: #4F4F4F;
+            transform: scale(1.02); 
+            transition: 0.3s;
+        }
+
+        .save{
+           background-color: #A1BF73;
+           color: white;
+        }
+
+        .save:hover{
+            background-color: #84a84d;
+            transform: scale(1.02); 
+            transition: 0.3s;
+        }
+    }
+
 
         @media(max-width: 1200px){
             .container{

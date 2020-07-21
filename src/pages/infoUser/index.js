@@ -119,8 +119,11 @@ function infoUser() {
           </select>
         </div>
       </div>
-
-     </div>
+      <div className="options">
+        <button className="back">Voltar</button>
+        <button className="save">Salvar</button>
+      </div>
+    </div>
     </Container>
   </>
   );
