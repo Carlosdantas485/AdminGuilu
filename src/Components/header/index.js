@@ -1,9 +1,13 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import { Header } from './styles';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/guilu_preto.jpeg';
 
 function header() {
+
+    
+    
+   
     return (
         <Header>
             <div className="logo">
@@ -11,7 +15,7 @@ function header() {
             </div>
             <div className="content">
                 <div className="infoDiv">
-                    <p>Nome de usuario</p>
+                    <button >Nome de usuario</button>
                     <p className="email">nomedousuario@timeguilu.com.br</p>
                 </div>
                 <div className="avatar">

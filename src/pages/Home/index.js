@@ -81,9 +81,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="logo_guilu_box">
-                    <img src={Guilu} alt="Florescer Brasil" className="logo_guilu" />
-                </div>
+               
             </Container>
         </>
     );
