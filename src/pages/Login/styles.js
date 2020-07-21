@@ -23,6 +23,7 @@ export const Container = styled.div`
             justify-content: center;
 
             img {
+                margin-top: 30px;
                 width: 212px;
                 height: auto;
             }

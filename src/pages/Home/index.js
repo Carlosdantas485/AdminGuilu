@@ -1,12 +1,16 @@
 import React from 'react';
 
 import { Container } from './styles';
+import Header from '../../Components/header/index';
 
- import Header from '../../Components/header/index';
- import Guilu from '../../assets/guilu_cinza.png';
-
+import {useHistory} from 'react-router-dom';
 
 function Home() {
+    const History = useHistory();
+
+    function handleInfoUser(){
+        History.push('/infoUser');
+    }
     return (
         <>
             <Header>

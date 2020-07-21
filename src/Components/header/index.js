@@ -4,9 +4,6 @@ import { Header } from './styles';
 import Logo from '../../assets/guilu_preto.jpeg';
 
 function header() {
-
-    
-    
    
     return (
         <Header>
@@ -15,7 +12,7 @@ function header() {
             </div>
             <div className="content">
                 <div className="infoDiv">
-                    <button >Nome de usuario</button>
+                    <button to={'/infouser'} >Nome de usuario</button>
                     <p className="email">nomedousuario@timeguilu.com.br</p>
                 </div>
                 <div className="avatar">

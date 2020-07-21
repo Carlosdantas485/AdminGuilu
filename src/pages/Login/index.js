@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useHistory } from 'react-router-dom';
 import { Container } from './styles';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/guilu_preto.jpeg';
 
 function Login() {
     const navigation = useHistory();
