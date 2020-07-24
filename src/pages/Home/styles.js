@@ -4,6 +4,11 @@ export const Container = styled.div`
     width:100%;
     height:100%;
     margin-top: 20px;
+
+    .link{
+        text-decoration:none;
+        text-align:center;
+    }
     
     .container{
         display:flex;
@@ -26,6 +31,7 @@ export const Container = styled.div`
         align-items: center;
         flex-direction:column;
         
+        
         h1{
             font-size: 35px;
             text-align: center;
@@ -42,17 +48,22 @@ export const Container = styled.div`
             background-color: #E2EAD4;
             border:2px solid #E2EAD4;
 
+
             h2{
                 margin: 5px;
                 margin-top: 20px;
                 font-size: 18px;
                 color: #636363;
+                text-decoration:none;
+
             }
 
             p{
                 margin: 0;
                 font-size: 15px;
                 color: #7B7D78;
+                text-decoration:none;
+
             }
         }
         .Option_Home:hover{

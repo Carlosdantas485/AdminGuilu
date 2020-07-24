@@ -1,14 +1,18 @@
 import React from 'react';
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { Container } from './styles';
 import Logo from '../../assets/guilu_preto.jpeg';
 
 function Login() {
-    const navigation = useHistory();
+    const History = useHistory();
 
     function nav() {
-        navigation.push('home');
+        History.push('home');
+    }
+
+    function recoverPassword() {
+        History.push('recoverPassword');
     }
 
     return (
@@ -28,7 +32,9 @@ function Login() {
                             Entrar
                         </button>
                         {/* eslint-disable-next-line */}
-                        <a>Esqueceu sua senha?</a>
+                        <Link type="button" onClick={recoverPassword}>
+                            Esqueceu sua senha ?
+                        </Link>
                     </div>
                 </div>
             </Container>

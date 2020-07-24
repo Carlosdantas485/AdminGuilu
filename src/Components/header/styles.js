@@ -24,9 +24,10 @@ export const Header = styled.div`
             flex-direction: column;
             align-items: right;
             margin-right: 1rem;
-            button {
+            .nameUser {
+                display:flex;
+                justify-content:flex-end;
                 color: #a8bc81;
-                text-align: right;
                 font-weight: bold;
                 font-size: 20px;
                 border:none;
@@ -67,7 +68,12 @@ export const Header = styled.div`
         .content {
             flex-direction: row-reverse;
             margin-bottom: 0.5rem;
-          
+            
+            .infoDiv {
+                .nameUser {
+                    justify-content:flex-start;
+                }
+            }
             .avatar {
                 margin-right: 1rem;
             }

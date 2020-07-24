@@ -30,6 +30,7 @@ export const Container = styled.div`
         }
 
         .formDiv {
+            margin-top:20px;
             display: flex;
             flex-direction: column;
             font-weight: bold;

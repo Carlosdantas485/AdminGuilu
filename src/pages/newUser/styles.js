@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width:100%;
     height:100%;
-    margin-top: 35px;
+    margin-top:40px;
 
     display:flex;
     justify-content:center;
@@ -12,17 +12,17 @@ export const Container = styled.div`
     .container{
         width:560px;
         margin:0 15px;
-        padding: 30px;
+        padding: 50px;
         background-color: #fff;
         border-radius: 18px;
         
-        h1{
-            font-size: 40px;
-            margin: 0 auto;
-        }
-
-        h2{
-            margin-bottom:0;
+        .logoDiv{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
         }
         
         h3{
@@ -38,8 +38,17 @@ export const Container = styled.div`
             font-size: 15px;
             background-color:#E2EAD4;
         }
+
+        .title{
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
             
     }
+
+    
 
     .infosUser{
         display: flex;
@@ -57,7 +66,7 @@ export const Container = styled.div`
             margin-right: 2.6rem;
             border: 5px solid #a8bc81;
             border-radius: 50%;
-        }
+        }            
     }
     .nameCel{
         display: flex;
@@ -82,56 +91,14 @@ export const Container = styled.div`
             width:58%;
             
             .edit{
-                display:flex;
-                input{
-                    border-radius: 5px 0px 0px 5px;
-                    border-right: none;
-                }
-
-                button{
-                    width:80px;
-                    height: 34px;
-                    padding: 5px 15px;
-                    border-radius: 0px 5px 5px 0px;
-                    border:2px solid grey;
-                    font-size: 15px;
-                    background-color:#B8CF8C;
-                    color: #fff;
-                }
-
-                button:hover{
-                    transition: 0.5s;
-                    background-color: #a1bf73;
-                }
+                display:flex;      
             }
         }
         .CpfCnpj{
-            width:40%;
-
-            
+            width:40%; 
             .edit{
                 display:flex;
-                
-                input{
-                    border-radius: 5px 0px 0px 5px;
-                    border-right: none;
-                }
-                        
-                button{
-                    width:80px;
-                    height: 34px;
-                    padding: 5px 15px;
-                    border-radius: 0px 5px 5px 0px;
-                    border:2px solid grey;
-                    font-size: 15px;
-                    background-color:#B8CF8C;
-                    color: #fff;
-                }
 
-                button:hover{
-                    transition: 0.5s;
-                    background-color: #a1bf73;
-                }
             }
         }  
            
@@ -217,18 +184,17 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-between;
         
-       
-        
-        .back{
-            background-color: #696969;
-            color: white;
-            text-align:center;
-            text-decoration:none;
-            width: 120px;
+        button{
+            width: 150px;
             padding: 5px;
             font-size: 22px;
             font-weight: bold;
             border-radius: 8px;
+        }
+        
+        .back{
+            background-color: #696969;
+            color: white;
         }
 
         .back:hover{
@@ -238,16 +204,8 @@ export const Container = styled.div`
         }
 
         .save{
-            background-color: #A1BF73;
-            color: white;
-            text-align:center;
-            text-decoration:none;
-            width: 120px;
-            padding: 5px;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 8px;
-        }
+           background-color: #A1BF73;
+           color: white;
         }
 
         .save:hover{
@@ -259,6 +217,8 @@ export const Container = styled.div`
 
 
         @media(max-width: 1200px){
+            height:100vh;
+
             .container{
                 margin-top:12px;
                 width: 100%;
@@ -337,19 +297,22 @@ export const Container = styled.div`
                     }
                 }
             }
-        }
 
-        .options{
-            
-            .back, .save{
-                width: 100px;
+            .options{
+                button{
+                    width: 100px;
+                    padding: 5px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border-radius: 8px;
+                }
             }
         }
 
-
         @media(max-width: 628px){
+            height:100%;
             .container{
-                width: 100%;
+                width: 65.5%;
             }
             .emailCpfCnpj{
                 display: flex;
@@ -380,9 +343,7 @@ export const Container = styled.div`
             } 
 
             .cityUf{
-                display:flex;
                 flex-direction:column;
-                
                 .city{
                     width:100%;
                 }
@@ -398,7 +359,7 @@ export const Container = styled.div`
                     }
                 }
             }
-        
+        }
     
-    
+           
 `;

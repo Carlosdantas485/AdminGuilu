@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { FaUserCircle } from 'react-icons/fa';
 import { Header } from './styles';
 import Logo from '../../assets/guilu_preto.jpeg';
 
-function header() {
-   
+function header(){
     return (
         <Header>
             <div className="logo">
@@ -12,7 +13,7 @@ function header() {
             </div>
             <div className="content">
                 <div className="infoDiv">
-                    <button to={'/infouser'} >Nome de usuario</button>
+                    <Link className="nameUser" to="infoUser" >Nome de usuario</Link>
                     <p className="email">nomedousuario@timeguilu.com.br</p>
                 </div>
                 <div className="avatar">
