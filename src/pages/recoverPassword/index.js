@@ -2,8 +2,10 @@ import React from 'react';
 
 import Header from '../../Components/header/index';
 import { Container } from './styles';
+import Logo from '../../assets/guilu_preto.jpeg';
 
-function Login() {
+
+function recoverPassword() {
    
     return (
         <>
@@ -12,10 +14,10 @@ function Login() {
             </Header>
 
             <Container>
-                
+               
             </Container>
         </>
     );
 }
 
-export default Login;
+export default recoverPassword;

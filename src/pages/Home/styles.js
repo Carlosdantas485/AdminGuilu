@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
 
     .link{
         text-decoration:none;
@@ -21,10 +24,10 @@ export const Container = styled.div`
         width: 300px;
         height: 610px;
         padding: 5px 25px;
-        border-radius: 18px;
-        background-color:white;
+        border-radius: 10px;
+        background-color:#fff;
         border: 2px solid white;
-        margin: 15px;
+        margin:15px;
         box-shadow: 1px 1px 2px grey;
         
         display: flex;        
@@ -48,7 +51,9 @@ export const Container = styled.div`
             background-color: #E2EAD4;
             border:2px solid #E2EAD4;
 
-
+            .logo{
+                width: 100px;
+            }
             h2{
                 margin: 5px;
                 margin-top: 20px;
@@ -100,9 +105,8 @@ export const Container = styled.div`
 
         }
 
-        #users, #dashboard, #archive{
-            height: 100%;
-
+         #dashboard,#archive{
+                
             .Option_Home:last-child{
                 margin-bottom: 40px;
             }

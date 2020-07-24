@@ -1,404 +1,304 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width:100%;
-    height:100%;
-    margin-top: 35px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 
-    display:flex;
-    justify-content:center;
-    align-items: center;
-
-    .container{
-        width:560px;
-        margin:0 15px;
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 18px;
-        
-        h1{
-            font-size: 40px;
-            margin: 0 auto;
-        }
-
-        h2{
-            margin-bottom:0;
-        }
-        
-        h3{
-            font-size: 14px;
-        }
-
-        input{   
-            width: 95%; 
-            height: 20px;
-            padding: 5px 15px;
-            border-radius: 5px ;
-            border:2px solid grey;
-            font-size: 15px;
-            background-color:#E2EAD4;
-        }
-            
-    }
-
-    .infosUser{
-        display: flex;
-        align-items: center;
-        flex-wrap:wrap;
-        margin-top: 30px;
-
-        .avatar {
-            width:100%;
-            height: 90px;
-            width:90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 2.6rem;
-            border: 5px solid #a8bc81;
-            border-radius: 50%;
-        }
-    }
-    .nameCel{
-        display: flex;
-        justify-content: space-between;
-        width:100%;
-        .name{
-            width:56%;
-         }
-        .cel{
-            width:35%;
-            margin-right: 19px;
-
-        }
-    }
-
-    .emailCpfCnpj{
-        display: flex;
-        justify-content:space-between;
-        width:100%;
-        
-        .email{
-            width:58%;
-            
-            .edit{
-                display:flex;
-                input{
-                    border-radius: 5px 0px 0px 5px;
-                    border-right: none;
-                }
-
-                button{
-                    width:80px;
-                    height: 34px;
-                    padding: 5px 15px;
-                    border-radius: 0px 5px 5px 0px;
-                    border:2px solid grey;
-                    font-size: 15px;
-                    background-color:#B8CF8C;
-                    color: #fff;
-                }
-
-                button:hover{
-                    transition: 0.5s;
-                    background-color: #a1bf73;
-                }
-            }
-        }
-        .CpfCnpj{
-            width:40%;
-
-            
-            .edit{
-                display:flex;
-                
-                input{
-                    border-radius: 5px 0px 0px 5px;
-                    border-right: none;
-                }
-                        
-                button{
-                    width:80px;
-                    height: 34px;
-                    padding: 5px 15px;
-                    border-radius: 0px 5px 5px 0px;
-                    border:2px solid grey;
-                    font-size: 15px;
-                    background-color:#B8CF8C;
-                    color: #fff;
-                }
-
-                button:hover{
-                    transition: 0.5s;
-                    background-color: #a1bf73;
-                }
-            }
-        }  
-           
-    }
-        
-    .boxCepNumberComplement{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .cep{
-            width:20%;
-        }
-
-        .number{
-            width:20%;
-        }
-        
-        .complement{
-            width:50%;
-            margin-right: 20px;
-        }
-    } 
-            
-    .local{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .neighborhood{
-            width:41%;
-        }
-        
-        .logradouro{
-            width:50%;
-            margin-right: 15px;
-
-        }
-    }
+    display: flex;
+    justify-content: center;
     
-    .boxCepNumberComplement{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
+    .container{
+        padding: 20px;
+        margin: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px grey;
         
-        .cep{
-            width:20%;
-        }
+        .user{
+            display:flex;
+            align-items:center;
+            
+            .avatar {
+                border: 5px solid #a8bc81;
+                border-radius: 50%;
+                margin-right:20px;
 
-        .number{
-            width:20%;
-        }
-        
-        .complement{
-            width:40%;
-            margin-right: 20px;
-        }
-    } 
-
-    .cityUf{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .city{
-            width:80%;
-        }
-        
-        .uf{
-            width:70px;
-            margin-top: 12px;
-            font-weight: bold;
-            select{
-                margin-top: 15px;
-                width: 70px;
-                height: 30px;
-            }
-        }
-    }
-    .options{
-        margin-top: 30px;
-
-        display: flex;
-        justify-content: space-between;
-        
-       
-        
-        .back{
-            background-color: #696969;
-            color: white;
-            text-align:center;
-            text-decoration:none;
-            width: 120px;
-            padding: 5px;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-
-        .back:hover{
-            background-color: #4F4F4F;
-            transform: scale(1.02); 
-            transition: 0.3s;
-        }
-
-        .save{
-            background-color: #A1BF73;
-            color: white;
-            text-align:center;
-            text-decoration:none;
-            width: 120px;
-            padding: 5px;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-        }
-
-        .save:hover{
-            background-color: #84a84d;
-            transform: scale(1.02); 
-            transition: 0.3s;
-        }
-    }
-
-
-        @media(max-width: 1200px){
-            .container{
-                margin-top:12px;
-                width: 100%;
-            }
-
-            .nameCel{
                 display: flex;
-                flex-direction:column;
+                justify-content: center;
+                align-items: center; 
+            }
+
+            h1{
+                margin:0;
+                margin-top:20px;
+                color: #A8BC81;
+                font-weight: bold;
+            }
+
+            h2{
+                margin:0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+        }
+        .inputs{
+            width: 100%;
+
+            .box{
+                margin-top: 10px;
+                display:flex;
+                flex-wrap:wrap;
+
+                h3{
+                    margin:0;
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                    color: #A1BF73;
+                    font-weight: bold;
+                }
+
+                input{
+                    height: 15px;
+                    padding: 5px 15px;
+                    border-radius: 5px ;
+                    border:1px solid grey;
+                    font-size: 15px;
+                    background-color:#E2EAD4;
+                }
                 .name{
-                    width:100%;
+                    width: 64%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+                   
                 }
                 .cel{
-                    width:100%;
+                    width: 34%;
+                    display:flex;
+                    flex-direction:column; 
                 }
-            }
 
-            .emailCpfCnpj{
-                display: flex;
-                flex-direction:column;
-                
                 .email{
-                    width:98%;
+                    width: 53%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+                    input{
+                        width:75%;
+                        border-right:0;
+                        border-radius:5px 0px 0px 5px;
+
+                    }
+                    button{
+                        height:27px;
+                        font-size:15px;
+                        border-radius:0px 5px 5px 0px;
+                        border: 1px solid grey;
+                    }
                 }
 
-                .CpfCnpj{
-                    width:98%;
-                }  
-                
-            }
+                .cpf{
+                    width: 45%;
+                    display:flex;
+                    flex-direction:column;
+                    input{
+                        width:71%;
+                        border-right:0;
+                        border-radius:5px 0px 0px 5px;
 
-            .boxCepNumberComplement{
-                width:100%;
-                display: flex;
-                justify-content:space-between;
-                
+                    }
+                    button{
+                        width:50px;
+                        height:27px;
+                        font-size:15px;
+                        border-radius:0px 5px 5px 0px;
+                        border: 1px solid grey;
+                    }
+                }
+
                 .cep{
-                    width:20%;
+                    width: 26%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+                    
                 }
 
                 .number{
-                    width:20%;
+                    width: 16%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+
                 }
-                
+
                 .complement{
-                    width:40%;
-                    margin-right: 30px;
+                    width: 54.5%;
+                    display:flex;
+                    flex-direction:column;
                 }
-            } 
-                   
-            .local{
-               flex-direction:column;
-                
-                .neighborhood{
-                    width:100%;
+
+                .bairro{
+                    width: 54%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
                 }
-                
+
                 .logradouro{
-                    width:100%;
+                    width: 44%;
+                    display:flex;
+                    flex-direction:column;
                 }
-            }
-            
-            .cityUf{
-                
+
                 .city{
-                    width:78%;
+                    width: 85%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
                 }
                 
                 .uf{
-                    width:90px;
-                    margin-top: 12px;
-                    font-weight: bold;
+                    display:flex;
+                    flex-direction:column;
+
                     select{
-                        margin-top: 15px;
+                        margin-top:5px;
+                        height: 25px;
                         width: 80px;
-                        height: 30px;
                     }
                 }
             }
+            
         }
-
         .options{
-            
-            .back, .save{
-                width: 100px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+
+            button{
+                border: none;
+                box-shadow: 1px 1px 2px grey;
+            }
+
+            .back{
+                background-color: #696969;
+                color: white;
+                text-align:center;
+                text-decoration:none;
+                width: 120px;
+                padding: 5px;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+
+            .back:hover{
+                background-color: #4F4F4F;
+                transform: scale(1.02); 
+                transition: 0.3s;
+            }
+
+            .save{
+                background-color: #A1BF73;
+                color: white;
+                text-align:center;
+                text-decoration:none;
+                width: 120px;
+                padding: 5px;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+
+            .save:hover{
+                background-color: #84a84d;
+                transform: scale(1.02); 
+                transition: 0.3s;
             }
         }
+    }
 
-
-        @media(max-width: 628px){
-            .container{
-                width: 100%;
+    @media(max-width: 768px){
+        .container{
+            width:100%;
+            .user{
+                width:100%;
+                flex-direction:column;
+                text-align:center;
             }
-            .emailCpfCnpj{
-                display: flex;
-                flex-direction:column;
-                .email{
-                    width:100%;
-                }
-
-                .CpfCnpj{
-                    width:100%;
-                }  
-            }
-
-            .boxCepNumberComplement{
-                flex-direction:column;
-                
-                .cep{
-                    width:100%;
-                }
-
-                .number{
-                    width:100%;
-                }
-                
-                .complement{
-                    width:100%;
-                }
-            } 
-
-            .cityUf{
-                display:flex;
-                flex-direction:column;
-                
-                .city{
-                    width:100%;
-                }
-                
-                .uf{
-                    width:100px;
-                    margin-top: 12px;
-                    font-weight: bold;
-                    select{
-                        margin-top: 15px;
-                        width: 80px;
-                        height: 30px;
+            .inputs{
+                .box{
+                    margin:0;
+                    flex-direction:column;
+                    h3{
+                        margin-top:10px;
                     }
+                    
+                    .name{
+                    width: 100%;
+                    
+                   
+                    }
+                    .cel{
+                        width: 100%;
+                    }
+
+                    .email{
+                        width: 100%;
+                        input{
+                            width: 87.5%;
+                            border: 1px solid grey;
+                            border-radius: 5px;
+                        }
+                       
+                    }
+
+                    .cpf{
+                        width: 100%;
+                        input{
+                            width: 87.5%;
+                            border: 1px solid grey;
+                            border-radius: 5px;
+                        }
+                        
+                    }
+
+                    .cep{
+                        width: 100%;
+                    }
+
+                    .number{
+                        width: 100%;
+
+                    }
+
+                    .complement{
+                        width: 100%;
+                    }
+
+                    .bairro{
+                        width: 100%;
+                    }
+
+                    .logradouro{
+                        width: 100%;
+                    }
+
+                    .city{
+                        width: 100%;
+                    }
+
+                    .uf{
+                        margin-top:10px;
+                    }
+                    
                 }
-            }
+               
+            } 
+        }  
         
-    
-    
+    }
 `;

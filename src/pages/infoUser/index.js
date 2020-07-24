@@ -1,133 +1,132 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-import { Container } from './styles';
 import Header from '../../Components/header/index';
+import { Container } from './styles';
+import Logo from '../../assets/guilu_preto.jpeg';
 import { FaUserCircle } from 'react-icons/fa';
 
+
 function infoUser() {
- 
-  return (
-  <>
-    <Header>
-      <div/>
-    </Header>
-  
-    <Container>
-      <div className="container">
-        <h1>Meu perfil</h1>
-        <div className="infosUser">
-          <div className="avatar">
-            <FaUserCircle size="90" color="#999" />
-          </div>
-          <div className="nameEmailUser">
-            <h2>Nome de usuario</h2>
-            <h3 className="emailUser">nomedousuario@timeguilu.com</h3>
-          </div>
-        </div>
+   
+    return (
+        <>
+            <Header>
+                <div/>
+            </Header>
 
-          <div className="nameCel">
-            <div className="name">
-              <h3>Nome completo</h3>
-              <input placeholder="Nome de usuario" />
-            </div>
-            <div className="cel">
-              <h3>Celular</h3>
-              <input placeholder="(11) 98765-3210"/>
-            </div>
-          </div>
+            <Container>
+                <div className="container">
+                    <div className="user">
+                      <div className="avatar">
+                        <FaUserCircle size="100" color="#999" />
+                      </div>
+                      <div className="infoUser">
+                         <h1>Nome de usuario</h1>   
+                          <h2>emaildousuario@timeguilu.com</h2>
+                      </div>
+                    </div>
+                    <div className="inputs">
+                        <div className="box">
+                            <div className="name">
+                                <h3>Nome completo</h3>
+                                <input type="text" placeholder="Nome completo" ></input>
+                            </div>
+                            <div className="cel">
+                                <h3>Celular</h3>
+                                <input type="text" placeholder="(XX) XXXXX-XXXX" ></input>
+                            </div>
+                        </div>
 
-          <div className="emailCpfCnpj">
-            <div className="email">
-            <h3>E-mail</h3>
-              <div className="edit">
-                <input placeholder="emaildousuario@timeguilu.com" />
-                <button>Alterar</button>
-              </div>
-            </div> 
-            <div className="CpfCnpj">
-              <h3>CPF/CNPJ</h3>
-              <div className="edit">
-                <input placeholder="987654321" />
-                <button>Alterar</button>
-              </div>
-            </div>
-          </div>
+                        <div className="box">
+                            <div className="email">
+                                <h3>E-mail</h3>
+                                <div className="edit">
+                                  <input type="text" placeholder="E-mail"/>
+                                  <button>Editar</button>
+                                </div>
+                            </div>
+                            <div className="cpf">
+                                <h3>CPF/CNPJ</h3>
+                                <div className="edit">
+                                    <input type="text" placeholder="CPF/CNPJ"></input>
+                                    <button>Editar</button>
+                                </div>
+                            </div>
+                        </div>
 
-        <div className="boxCepNumberComplement">
-          <div className="cep">
-            <h3>Cep</h3>
-            <input placeholder="987654-2" />
-          </div>
-          <div className="number">
-            <h3>Numero</h3>
-            <input placeholder="123"/>
-          </div>
-          <div className="complement">
-            <h3>Complemento</h3>
-            <input placeholder="nome da rua do usuario"/>
-          </div>
-        </div>
+                        <div className="box">
+                            <div className="cep">
+                                <h3>Cep</h3>
+                                <input type="text" placeholder="XXXXX-XXX"></input>
+                            </div>
+                            <div className="number">
+                                <h3>Numero</h3>
+                                <input type="text" placeholder="Numero"></input>
+                            </div>
+                            <div className="complement">
+                                <h3>Complemento</h3>
+                                <input type="text" placeholder="Rua do usuario"></input>
+                            </div>
+                        </div>
 
-        <div className="local">
-          <div className="neighborhood">
-            <h3>Bairro</h3>
-            <input placeholder="Bairro do usuario" />
-          </div>
-          <div className="logradouro">
-            <h3>Logradouro</h3>
-            <input placeholder="Logradouro do usuario"/>
-          </div>
-        </div>
+                        <div className="box">
+                            <div className="bairro">
+                                <h3>Bairro</h3>
+                                <input type="text" placeholder="Bairro do usuario"></input>
+                            </div>
+                            <div className="logradouro">
+                                <h3>Logradouro</h3>
+                                <input type="text" placeholder="Logradouro do usuario"></input>
+                            </div>
+                        </div>
+                            
+                        <div className="box">
+                            <div className="city">
+                                <h3>Cidade</h3>
+                                <input type="text" placeholder="Cidade do usuaruio"></input>
+                            </div>
+                            <div className="uf">
+                                <label for="cars">UF</label>
 
-        <div className="cityUf">
-          <div className="city">
-            <h3>Cidade</h3>
-            <input placeholder="Cidade do usuario" />
-          </div>
-
-          <div className="uf">
-            <label for="cars">UF</label>
-
-            <select name="cars" id="cars">
-              <option value="Acre">AC</option>
-              <option value="Alagoas">AL</option>
-              <option value="Amapá">AP</option>
-              <option value="Amazonas">AM</option>
-              <option value="Bahia">BA</option>
-              <option value="Ceará">CE</option>
-              <option value="Distrito Federal">DF</option>
-              <option value="Espirito Santo">ES</option>
-              <option value="Goiás">GO</option>
-              <option value="Maranhão">MA</option>
-              <option value="Mato Grosso">MT</option>
-              <option value="Mato Grosso do Sul">MS</option>
-              <option value="Minas Gerais">MG</option>
-              <option value="Pará">PA</option>
-              <option value="Paraiba">PB</option>
-              <option value="Pernambuco">PE</option>
-              <option value="Piauí">PI</option>
-              <option value="Rio De Janeiro">RJ</option>
-              <option value="Rio Grande Do Norte">RN</option>
-              <option value="Rio Grande Do Sul">RS</option>
-              <option value="Rondônia">RO</option>
-              <option value="Roraima">RR</option>
-              <option value="Santa Catarina">SC</option>
-              <option value="São Paulo">SP</option>
-              <option value="Sergipe">SE</option>
-              <option value="Tocantins">TO</option>
-
-            </select>
-          </div>
-        </div>
-        <div className="options">
-          <Link to="home" className="back">Voltar</Link>
-          <Link to="home" className="save">Salvar</Link>
-        </div>
-      </div>
-    </Container>
-  </>
-  );
+                                <select name="cars" id="cars">
+                                    <option value="Acre">AC</option>
+                                    <option value="Alagoas">AL</option>
+                                    <option value="Amapá">AP</option>
+                                    <option value="Amazonas">AM</option>
+                                    <option value="Bahia">BA</option>
+                                    <option value="Ceará">CE</option>
+                                    <option value="Distrito Federal">DF</option>
+                                    <option value="Espirito Santo">ES</option>
+                                    <option value="Goiás">GO</option>
+                                    <option value="Maranhão">MA</option>
+                                    <option value="Mato Grosso">MT</option>
+                                    <option value="Mato Grosso do Sul">MS</option>
+                                    <option value="Minas Gerais">MG</option>
+                                    <option value="Pará">PA</option>
+                                    <option value="Paraiba">PB</option>
+                                    <option value="Pernambuco">PE</option>
+                                    <option value="Piauí">PI</option>
+                                    <option value="Rio De Janeiro">RJ</option>
+                                    <option value="Rio Grande Do Norte">RN</option>
+                                    <option value="Rio Grande Do Sul">RS</option>
+                                    <option value="Rondônia">RO</option>
+                                    <option value="Roraima">RR</option>
+                                    <option value="Santa Catarina">SC</option>
+                                    <option value="São Paulo">SP</option>
+                                    <option value="Sergipe">SE</option>
+                                    <option value="Tocantins">TO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="options">
+                        <button className="back">Voltar</button>
+                        <button className="save">Salvar</button>
+                    </div>
+                </div>
+            </Container>
+        </>
+    );
 }
 
 export default infoUser;

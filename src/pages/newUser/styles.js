@@ -1,365 +1,263 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width:100%;
-    height:100%;
-    margin-top:40px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 
-    display:flex;
-    justify-content:center;
-    align-items: center;
-
+    display: flex;
+    justify-content: center;
+    
     .container{
-        width:560px;
-        margin:0 15px;
-        padding: 50px;
+        padding: 20px;
+        margin: 15px;
         background-color: #fff;
-        border-radius: 18px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px grey;
         
-        .logoDiv{
-            display:flex;
-            justify-content:center;
-            align-items: center;
-            img{
-                width: 50%;
-            }
-        }
-        
-        h3{
-            font-size: 14px;
-        }
-
-        input{   
-            width: 95%; 
-            height: 20px;
-            padding: 5px 15px;
-            border-radius: 5px ;
-            border:2px solid grey;
-            font-size: 15px;
-            background-color:#E2EAD4;
-        }
-
-        .title{
-            width:100%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-        }
-            
-    }
-
-    
-
-    .infosUser{
-        display: flex;
-        align-items: center;
-        flex-wrap:wrap;
-        margin-top: 30px;
-
-        .avatar {
-            width:100%;
-            height: 90px;
-            width:90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 2.6rem;
-            border: 5px solid #a8bc81;
-            border-radius: 50%;
-        }            
-    }
-    .nameCel{
-        display: flex;
-        justify-content: space-between;
-        width:100%;
-        .name{
-            width:56%;
-         }
-        .cel{
-            width:35%;
-            margin-right: 19px;
-
-        }
-    }
-
-    .emailCpfCnpj{
-        display: flex;
-        justify-content:space-between;
-        width:100%;
-        
-        .email{
-            width:58%;
-            
-            .edit{
-                display:flex;      
-            }
-        }
-        .CpfCnpj{
-            width:40%; 
-            .edit{
-                display:flex;
-
-            }
-        }  
+        .user{
+            margin:20px 0;
            
-    }
-        
-    .boxCepNumberComplement{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .cep{
-            width:20%;
-        }
 
-        .number{
-            width:20%;
-        }
-        
-        .complement{
-            width:50%;
-            margin-right: 20px;
-        }
-    } 
-            
-    .local{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .neighborhood{
-            width:41%;
-        }
-        
-        .logradouro{
-            width:50%;
-            margin-right: 15px;
-
-        }
-    }
-    
-    .boxCepNumberComplement{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .cep{
-            width:20%;
-        }
-
-        .number{
-            width:20%;
-        }
-        
-        .complement{
-            width:40%;
-            margin-right: 20px;
-        }
-    } 
-
-    .cityUf{
-        width:100%;
-        display: flex;
-        justify-content:space-between;
-        
-        .city{
-            width:80%;
-        }
-        
-        .uf{
-            width:70px;
-            margin-top: 12px;
-            font-weight: bold;
-            select{
-                margin-top: 15px;
-                width: 70px;
-                height: 30px;
-            }
-        }
-    }
-    .options{
-        margin-top: 30px;
-
-        display: flex;
-        justify-content: space-between;
-        
-        button{
-            width: 150px;
-            padding: 5px;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-        
-        .back{
-            background-color: #696969;
-            color: white;
-        }
-
-        .back:hover{
-            background-color: #4F4F4F;
-            transform: scale(1.02); 
-            transition: 0.3s;
-        }
-
-        .save{
-           background-color: #A1BF73;
-           color: white;
-        }
-
-        .save:hover{
-            background-color: #84a84d;
-            transform: scale(1.02); 
-            transition: 0.3s;
-        }
-    }
-
-
-        @media(max-width: 1200px){
-            height:100vh;
-
-            .container{
-                margin-top:12px;
-                width: 100%;
+            h2{
+                margin:0;
+                font-size: 25px;
+                color: #A8BC81;
+                font-weight: bold;
             }
 
-            .nameCel{
-                display: flex;
+            h3{
+                margin:0;
+                font-size: 15px;
+                
+            }
+
+            .infoUser{
+                display:flex;
+                align-items:center;
                 flex-direction:column;
+                
+                img{
+                    width: 170px;
+                    margin-bottom: 20px;
+                }
+            }
+
+        }
+        .inputs{
+            width: 100%;
+
+            .box{
+                margin-top: 10px;
+                display:flex;
+                flex-wrap:wrap;
+
+                h3{
+                    margin:0;
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                    color: #A1BF73;
+                    font-weight: bold;
+                }
+
+                input{
+                    height: 15px;
+                    padding: 5px 15px;
+                    border-radius: 5px ;
+                    border:1px solid grey;
+                    font-size: 15px;
+                    background-color:#E2EAD4;
+                }
                 .name{
-                    width:100%;
+                    width: 64%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+                   
                 }
                 .cel{
-                    width:100%;
+                    width: 34%;
+                    display:flex;
+                    flex-direction:column; 
                 }
-            }
 
-            .emailCpfCnpj{
-                display: flex;
-                flex-direction:column;
-                
                 .email{
-                    width:98%;
+                    width: 54%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
                 }
 
-                .CpfCnpj{
-                    width:98%;
-                }  
-                
-            }
+                .cpf{
+                    width: 44%;
+                    display:flex;
+                    flex-direction:column;
+                }
 
-            .boxCepNumberComplement{
-                width:100%;
-                display: flex;
-                justify-content:space-between;
-                
                 .cep{
-                    width:20%;
+                    width: 26%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
                 }
 
                 .number{
-                    width:20%;
+                    width: 16%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+
                 }
-                
+
                 .complement{
-                    width:40%;
-                    margin-right: 30px;
+                    width: 54.5%;
+                    display:flex;
+                    flex-direction:column;
                 }
-            } 
-                   
-            .local{
-               flex-direction:column;
-                
-                .neighborhood{
-                    width:100%;
+
+                .bairro{
+                    width: 54%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
                 }
-                
+
                 .logradouro{
-                    width:100%;
+                    width: 44%;
+                    display:flex;
+                    flex-direction:column;
+                }
+
+                .city{
+                    width: 85%;
+                    margin-right:10px;
+                    display:flex;
+                    flex-direction:column;
+                }
+                
+                .uf{
+                    display:flex;
+                    flex-direction:column;
+
+                    select{
+                        margin-top:5px;
+                        height: 25px;
+                        width: 80px;
+                    }
                 }
             }
             
-            .cityUf{
-                
-                .city{
-                    width:78%;
-                }
-                
-                .uf{
-                    width:90px;
-                    margin-top: 12px;
-                    font-weight: bold;
-                    select{
-                        margin-top: 15px;
-                        width: 80px;
-                        height: 30px;
-                    }
-                }
+        }
+        .options{
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+
+            button{
+                border: 1px solid grey;
             }
 
-            .options{
-                button{
-                    width: 100px;
-                    padding: 5px;
-                    font-size: 18px;
-                    font-weight: bold;
-                    border-radius: 8px;
-                }
+            .back{
+                background-color: #696969;
+                color: white;
+                text-align:center;
+                text-decoration:none;
+                width: 120px;
+                padding: 5px;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+
+            .back:hover{
+                background-color: #4F4F4F;
+                transform: scale(1.02); 
+                transition: 0.3s;
+            }
+
+            .save{
+                background-color: #A1BF73;
+                color: white;
+                text-align:center;
+                text-decoration:none;
+                width: 120px;
+                padding: 5px;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+
+            .save:hover{
+                background-color: #84a84d;
+                transform: scale(1.02); 
+                transition: 0.3s;
             }
         }
+    }
 
-        @media(max-width: 628px){
-            height:100%;
-            .container{
-                width: 65.5%;
-            }
-            .emailCpfCnpj{
-                display: flex;
-                flex-direction:column;
-                .email{
-                    width:100%;
-                }
+    @media(max-width: 768px){
+        .container{
+            width:100%;
+            .inputs{
+                .box{
+                    margin:0;
+                    flex-direction:column;
+                    h3{
+                        margin-top:10px;
+                    }
+                    
+                    .name{
+                    width: 100%;
+                    
+                   
+                    }
+                    .cel{
+                        width: 100%;
+                    }
 
-                .CpfCnpj{
-                    width:100%;
-                }  
-            }
+                    .email{
+                        width: 100%;
+                       
+                    }
 
-            .boxCepNumberComplement{
-                flex-direction:column;
-                
-                .cep{
-                    width:100%;
-                }
+                    .cpf{
+                        width: 100%;
+                        
+                    }
 
-                .number{
-                    width:100%;
+                    .cep{
+                        width: 100%;
+                    }
+
+                    .number{
+                        width: 100%;
+
+                    }
+
+                    .complement{
+                        width: 100%;
+                    }
+
+                    .bairro{
+                        width: 100%;
+                    }
+
+                    .logradouro{
+                        width: 100%;
+                    }
+
+                    .city{
+                        width: 100%;
+                    }
+
+                    .uf{
+                        margin-top:10px;
+                    }
+                    
                 }
-                
-                .complement{
-                    width:100%;
-                }
+               
             } 
-
-            .cityUf{
-                flex-direction:column;
-                .city{
-                    width:100%;
-                }
-                
-                .uf{
-                    width:100px;
-                    margin-top: 12px;
-                    font-weight: bold;
-                    select{
-                        margin-top: 15px;
-                        width: 80px;
-                        height: 30px;
-                    }
-                }
-            }
-        }
-    
-           
+        }  
+        
+    }
 `;
