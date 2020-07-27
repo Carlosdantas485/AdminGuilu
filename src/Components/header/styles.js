@@ -54,13 +54,14 @@ export const Header = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content:center;
         height: 190px;
         padding-top: 20px;
         margin-bottom: 2rem;
 
         .logo {
             img {
-                margin-left:0px;
+                margin:10px 0px;
                 width: 180px;
             }
         }
@@ -70,6 +71,7 @@ export const Header = styled.div`
             margin-bottom: 0.5rem;
             
             .infoDiv {
+                margin:0;
                 .nameUser {
                     justify-content:flex-start;
                 }

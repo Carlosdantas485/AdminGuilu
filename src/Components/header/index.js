@@ -17,7 +17,7 @@ function header(){
                     <p className="email">nomedousuario@timeguilu.com.br</p>
                 </div>
                 <div className="avatar">
-                    <FaUserCircle size="55" color="#999" />
+                    <FaUserCircle size="50" color="#999" />
                 </div>
             </div>
         </Header>

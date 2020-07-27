@@ -4,10 +4,12 @@ import { Container } from './styles';
 import Header from '../../Components/header/index';
 import { FaUserCircle } from 'react-icons/fa';
 import { MdDelete } from "react-icons/md";
+import { FiEdit2 } from "react-icons/fi";
 
 
 function users() {
-    
+  
+
   return (
       <>
       <Header>
@@ -19,65 +21,42 @@ function users() {
 
             <div className="list">
                 <div className="user">
-                    <div className="infoUser">
-                        <div className="headerUser">
-                            <FaUserCircle  className="avatar" size={100} color="#999" /> 
-                            <div className="trash">
-                                <MdDelete size="30" className="icon" />
+                    <div className="headerUser">
+                        <div className="infoUser" >
+                            <div className="boxInfo">
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <button className="edit">Editar</button>
                             </div>
+                            <div className="boxInfo">
+                                <h3 id="emailUser">carlosdantas485@timeguilu.com</h3>
+                                <button className="edit">Editar</button>
+                            </div>
+                        </div> 
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen"/> 
+                            <MdDelete size="20" className="icon" />
                         </div>
-                        <div>
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h3>carlosdantas485@gmail.com</h3>
-                        </div>  
-                    </div>
-                </div>
-
+                    </div> 
+                </div> 
                 <div className="user">
-                    <div className="infoUser">
-                        <div className="headerUser">
-                            <FaUserCircle  className="avatar" size={100} color="#999" /> 
-                            <div className="trash">
-                                <MdDelete size="30" className="icon" />
+                    <div className="headerUser">
+                        <div className="infoUser" >
+                            <div className="boxInfo">
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <button className="edit">Editar</button>
                             </div>
-                        </div>
-                        <div>
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h3>carlosdantas485@gmail.com</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div className="user">
-                    <div className="infoUser">
-                        <div className="headerUser">
-                            <FaUserCircle  className="avatar" size={100} color="#999" /> 
-                            <div className="trash">
-                                <MdDelete size="30" className="icon" />
+                            <div className="boxInfo">
+                                <h3 id="emailUser">carlosdantas485@timeguilu.com</h3>
+                                <button className="edit">Editar</button>
                             </div>
+                        </div> 
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen"/> 
+                            <MdDelete size="20" className="icon" />
                         </div>
-                        <div>
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h3>carlosdantas485@gmail.com</h3>
-                        </div>  
-                    </div>
-                </div>
-                <div className="user">
-                    <div className="infoUser">
-                        <div className="headerUser">
-                            <FaUserCircle  className="avatar" size={100} color="#999" /> 
-                            <div className="trash">
-                                <MdDelete size="30" className="icon" />
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h3>carlosdantas485@gmail.com</h3>
-                        </div>  
-                    </div>
-                </div>
-
+                    </div> 
+                </div>  
             </div>
-
           </div>
       </Container>
       </>

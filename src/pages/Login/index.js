@@ -18,6 +18,21 @@ function Login() {
     return (
         <>
             <Container>
+                
+            <div class="area" >
+                    <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div >
                 <div className="cardDiv">
                     <div className="logoDiv">
                         <img src={Logo} alt="logo" />
@@ -32,7 +47,7 @@ function Login() {
                             Entrar
                         </button>
                         {/* eslint-disable-next-line */}
-                        <Link type="button" onClick={recoverPassword}>
+                        <Link className="recoverPassword" type="button" onClick={recoverPassword}>
                             Esqueceu sua senha ?
                         </Link>
                     </div>

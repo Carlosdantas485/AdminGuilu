@@ -14,5 +14,7 @@ export const Container = styled.div`
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
+    }
+    
 
 `;

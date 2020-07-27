@@ -81,7 +81,7 @@ export const Container = styled.div`
                 }
 
                 .email{
-                    width: 53%;
+                    width: 5%;
                     margin-right:10px;
                     display:flex;
                     flex-direction:column;
@@ -92,6 +92,7 @@ export const Container = styled.div`
 
                     }
                     button{
+                        width:50px;
                         height:27px;
                         font-size:15px;
                         border-radius:0px 5px 5px 0px;
