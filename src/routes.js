@@ -8,6 +8,7 @@ import Dashboard from './pages/dashboard';
 import NewUser from './pages/newUser';
 import RecoverPassword from './pages/recoverPassword';
 import Users from './pages/users';
+import Company from './pages/company';
 
 export default function Routes() {
     return (
@@ -20,6 +21,7 @@ export default function Routes() {
                 <Route path="/newUser" component={NewUser} />
                 <Route path="/recoverPassword" component={RecoverPassword} />
                 <Route path="/usersList" component={Users} />
+                <Route path="/company" component={Company} />
             </Switch>
         </BrowserRouter>
     );
