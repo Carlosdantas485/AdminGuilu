@@ -1,66 +1,88 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import { Container } from './styles';
-import Header from '../../Components/header/index';
-import { FaUserCircle } from 'react-icons/fa';
+import { Container, Actions } from './styles';
+import Header from '../../Components/header';
+
 import { MdDelete } from "react-icons/md";
 import { FiEdit2 } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 
-function users() {
-  
+function Users() {
+    const [showDelete, setShowDelete] = useState(false);
+    const handleDeleteShow = () => {setShowDelete(true);};
+    const handleDeleteClose = () => setShowDelete(false);
+    return (
+        <>
+            <Header><div></div></Header>
 
-  return (
-      <>
-      <Header>
-          <div/>
-      </Header>
-      <Container>
-          <div className="container">
-            <h1>Lista de usuarios</h1>
+        <Container>
+            <div className="container">
+                <div className="headerPage">
+                    <h1>Lista de usuarios</h1>
+                    <Link to="/home">
+                        <button className="back">
+                            Voltar
+                        </button>
+                    </Link>
+                </div>
 
-            <div className="list">
+                <div className="list">
                 <div className="user">
-                    <div className="headerUser">
-                        <div className="infoUser" >
-                            <div className="boxInfo">
+                        <div className="headerUser">
+                            <div className="infoUser" >
                                 <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
-                                <button className="edit">Editar</button>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
                             </div>
-                            <div className="boxInfo">
-                                <h3 id="emailUser">carlosdantas485@timeguilu.com</h3>
-                                <button className="edit">Editar</button>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
-                        </div> 
-                        <div className="options">
-                            <FiEdit2 size="20" className="icon" id="pen"/> 
-                            <MdDelete size="20" className="icon" />
                         </div>
-                    </div> 
-                </div> 
-                <div className="user">
-                    <div className="headerUser">
-                        <div className="infoUser" >
-                            <div className="boxInfo">
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
                                 <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
-                                <button className="edit">Editar</button>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
                             </div>
-                            <div className="boxInfo">
-                                <h3 id="emailUser">carlosdantas485@timeguilu.com</h3>
-                                <button className="edit">Editar</button>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
-                        </div> 
-                        <div className="options">
-                            <FiEdit2 size="20" className="icon" id="pen"/> 
-                            <MdDelete size="20" className="icon" />
                         </div>
-                    </div> 
-                </div>  
+                    </div>
+
+                </div>
             </div>
-          </div>
-      </Container>
-      </>
-  );
+        </Container>
+
+
+        <Actions open={showDelete} onClose={handleDeleteClose}>
+            <div className="containerModal">
+                <p className="titleModal">Excluir usuario</p>
+                <div className="line" />
+                <p>Gostaria de excluir este usuario ?</p>
+                <div className="group">
+                <button
+                    type="button"
+                    className="back"
+                    onClick={()=>handleDeleteClose()}
+                >
+                    Não
+                </button>
+                <button
+                    type="submit"
+                    className="send"
+                    onClick={()=>handleDeleteClose()}
+                >
+                    Sim
+                </button>
+                </div>
+            </div>
+            </Actions>
+        </>
+    );
 }
 
-export default users;
+export default Users;

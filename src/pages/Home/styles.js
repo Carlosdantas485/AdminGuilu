@@ -12,7 +12,7 @@ export const Container = styled.div`
         text-decoration:none;
         text-align:center;
     }
-    
+
     .container{
         display:flex;
         flex-wrap: wrap;
@@ -23,18 +23,18 @@ export const Container = styled.div`
     .box{
         width: 300px;
         height: 610px;
-        padding: 5px 25px;
+        padding: 5px 30px;
         border-radius: 10px;
         background-color:#fff;
         border: 2px solid white;
         margin:15px;
         box-shadow: 1px 1px 2px grey;
-        
-        display: flex;        
+
+        display: flex;
         align-items: center;
         flex-direction:column;
-        
-        
+
+
         h1{
             font-size: 35px;
             text-align: center;
@@ -74,11 +74,11 @@ export const Container = styled.div`
         .Option_Home:hover{
             cursor: pointer;
             transition: 0.5s;
-            border:2px #A8BC81 solid; 
+            border:2px #A8BC81 solid;
         }
-       
+
     }
-    
+
     .logo_guilu_box{
         width: 100%;
         display:flex;
@@ -86,19 +86,19 @@ export const Container = styled.div`
 
         .logo_guilu{
             height: 100px;
-            margin-right: 80px;    
+            margin-right: 80px;
         }
     }
-    
+
 
     @media(max-width: 1200px){
         .box{
             width: 100%;
-            
+
             .Option_Home{
-                width: 95%;
-                
-                display: flex;        
+                width: 90%;
+
+                display: flex;
                 align-items: center;
                 flex-direction:column;
             }
@@ -106,24 +106,10 @@ export const Container = styled.div`
         }
 
          #dashboard,#archive{
-                
-            .Option_Home:last-child{
-                margin-bottom: 40px;
-            }
-
+            height:27%;
         }
 
-        
-        .logo_guilu_box{
-            width: 100%;
-            display:flex;
-            justify-content: center;
-
-            .logo_guilu{
-                margin-right:0;
-            }
-        }
     }
 
-    
+
 `;

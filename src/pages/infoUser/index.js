@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../../Components/header/index';
 import { Container } from './styles';
-import Logo from '../../assets/guilu_preto.jpeg';
 import { FaUserCircle } from 'react-icons/fa';
 
 
 function infoUser() {
-   
+
     return (
         <>
             <Header>
@@ -21,7 +21,7 @@ function infoUser() {
                         <FaUserCircle size="100" color="#999" />
                       </div>
                       <div className="infoUser">
-                         <h1>Nome de usuario</h1>   
+                         <h1>Nome de usuario</h1>
                           <h2>emaildousuario@timeguilu.com</h2>
                       </div>
                     </div>
@@ -79,16 +79,16 @@ function infoUser() {
                                 <input type="text" placeholder="Logradouro do usuario"></input>
                             </div>
                         </div>
-                            
+
                         <div className="box">
                             <div className="city">
                                 <h3>Cidade</h3>
                                 <input type="text" placeholder="Cidade do usuaruio"></input>
                             </div>
                             <div className="uf">
-                                <label for="cars">UF</label>
+                                <label for="cars" className="ufs">UF</label>
 
-                                <select name="cars" id="cars">
+                                <select name="Uf" id="uf">
                                     <option value="Acre">AC</option>
                                     <option value="Alagoas">AL</option>
                                     <option value="Amapá">AP</option>
@@ -120,8 +120,12 @@ function infoUser() {
                         </div>
                     </div>
                     <div className="options">
-                        <button className="back">Voltar</button>
-                        <button className="save">Salvar</button>
+                    <Link to="/home">
+                            <button className="back">Voltar</button>
+                        </Link>
+                        <Link to="/home">
+                            <button className="save">Salvar</button>
+                        </Link>
                     </div>
                 </div>
             </Container>

@@ -13,31 +13,35 @@ export const Container = styled.div`
         img{
             width: 60%;
         }
-        .back{
-            margin-top: 20px;
+        button{
+            margin-top:30px;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
             width:150px;
             height: 50px;
             font-weight: bold;
             padding: 5px 15px;
             border-radius: 5px;
-            border:2px solid #F5F5F5;
+            border:2px solid #fff;
             font-size: 20px;
-            background-color:#fff;
-            color: #B8CF8C;
+        }
+        .back{
+            background-color: #696969;
+            color: white;
         }
 
         .back:hover{
-            transition: 0.5s;
-            background-color: #F5F5F5;
+            background-color: #4F4F4F;
+            transition: 0.3s;
         }
-    }   
+    }
 
     @media(max-width: 1200px){
         .container{
             img{
                 width: 96%;
             }
-                
+
         }
     }
 `;

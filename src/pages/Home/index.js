@@ -5,7 +5,7 @@ import { Container } from './styles';
 import Header from '../../Components/header/index';
 
 function Home() {
-  
+
     return (
         <>
             <Header>
@@ -18,7 +18,7 @@ function Home() {
                     <div className="box" id="users">
                         <h1>Usuarios</h1>
                         <div className="Option_Home">
-                            <Link className="link" to="">
+                            <Link className="link" to="newCompany">
                                 <h2>Registrar empresa</h2>
                                 <p>
                                     Cadastrar uma empresa para comecar a usar os
@@ -27,7 +27,7 @@ function Home() {
                             </Link>
                         </div>
                         <div className="Option_Home">
-                            <Link className="link" to="">
+                            <Link className="link" to="company">
                                 <h2>Listar empresa</h2>
                                 <p>
                                     Veja a lista completa de todas as empresas
@@ -44,7 +44,7 @@ function Home() {
                             </Link>
                         </div>
                         <div className="Option_Home">
-                            <Link className="link" to="">
+                            <Link className="link" to="/usersList">
                                 <h2>Listar usuario</h2>
                                 <p>
                                     Veja a todas as informações dos usuarios
@@ -89,7 +89,7 @@ function Home() {
                             </Link>
                         </div>
                     </div>
-                </div>    
+                </div>
             </Container>
         </>
     );

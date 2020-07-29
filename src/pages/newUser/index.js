@@ -1,12 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../../Components/header/index';
-import { Container } from './styles';
+import { Container} from './styles';
 import Logo from '../../assets/guilu_preto.jpeg';
 
 
 function newUser() {
-   
     return (
         <>
             <Header>
@@ -69,7 +69,7 @@ function newUser() {
                                 <input type="text" placeholder="Logradouro do usuario"></input>
                             </div>
                         </div>
-                            
+
                         <div className="box">
                             <div className="city">
                                 <h3>Cidade</h3>
@@ -110,11 +110,15 @@ function newUser() {
                         </div>
                     </div>
                     <div className="options">
-                        <button className="back">Voltar</button>
-                        <button className="save">Salvar</button>
+                        <Link to="/home">
+                            <button className="back">Voltar</button>
+                        </Link>
+                            <button className="save">Cadastrar</button>
                     </div>
                 </div>
             </Container>
+
+
         </>
     );
 }

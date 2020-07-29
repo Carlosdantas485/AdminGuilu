@@ -7,17 +7,17 @@ export const Container = styled.div`
 
     display: flex;
     justify-content: center;
-    
+
     .container{
         padding: 20px;
         margin: 15px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
-        
+
         .user{
             margin:20px 0;
-           
+
 
             h2{
                 margin:0;
@@ -29,14 +29,14 @@ export const Container = styled.div`
             h3{
                 margin:0;
                 font-size: 15px;
-                
+
             }
 
             .infoUser{
                 display:flex;
                 align-items:center;
                 flex-direction:column;
-                
+
                 img{
                     width: 170px;
                     margin-bottom: 20px;
@@ -63,7 +63,7 @@ export const Container = styled.div`
                 input{
                     height: 15px;
                     padding: 5px 15px;
-                    border-radius: 5px ;
+                    border-radius: 50px ;
                     border:1px solid grey;
                     font-size: 15px;
                     background-color:#E2EAD4;
@@ -73,12 +73,12 @@ export const Container = styled.div`
                     margin-right:10px;
                     display:flex;
                     flex-direction:column;
-                   
+
                 }
                 .cel{
                     width: 34%;
                     display:flex;
-                    flex-direction:column; 
+                    flex-direction:column;
                 }
 
                 .email{
@@ -134,7 +134,7 @@ export const Container = styled.div`
                     display:flex;
                     flex-direction:column;
                 }
-                
+
                 .uf{
                     display:flex;
                     flex-direction:column;
@@ -146,7 +146,7 @@ export const Container = styled.div`
                     }
                 }
             }
-            
+
         }
         .options{
             margin-top: 25px;
@@ -154,42 +154,36 @@ export const Container = styled.div`
             justify-content: space-between;
 
             button{
-                border: 1px solid grey;
+                border: none;
+                box-shadow: 1px 1px 2px grey;
+                width:150px;
+                height: 50px;
+                font-weight: bold;
+                padding: 5px 15px;
+                border-radius: 5px;
+                border:2px solid #fff;
+                font-size: 20px;
             }
 
             .back{
                 background-color: #696969;
                 color: white;
-                text-align:center;
-                text-decoration:none;
-                width: 120px;
-                padding: 5px;
-                font-size: 22px;
-                font-weight: bold;
-                border-radius: 8px;
+
             }
 
             .back:hover{
                 background-color: #4F4F4F;
-                transform: scale(1.02); 
                 transition: 0.3s;
             }
 
             .save{
                 background-color: #A1BF73;
                 color: white;
-                text-align:center;
-                text-decoration:none;
-                width: 120px;
-                padding: 5px;
-                font-size: 22px;
-                font-weight: bold;
-                border-radius: 8px;
+
             }
 
             .save:hover{
                 background-color: #84a84d;
-                transform: scale(1.02); 
                 transition: 0.3s;
             }
         }
@@ -205,11 +199,11 @@ export const Container = styled.div`
                     h3{
                         margin-top:10px;
                     }
-                    
+
                     .name{
                     width: 100%;
-                    
-                   
+
+
                     }
                     .cel{
                         width: 100%;
@@ -217,12 +211,12 @@ export const Container = styled.div`
 
                     .email{
                         width: 100%;
-                       
+
                     }
 
                     .cpf{
                         width: 100%;
-                        
+
                     }
 
                     .cep{
@@ -253,11 +247,13 @@ export const Container = styled.div`
                     .uf{
                         margin-top:10px;
                     }
-                    
+
                 }
-               
-            } 
-        }  
-        
+
+            }
+        }
+
     }
 `;
+
+
