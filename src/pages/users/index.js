@@ -28,7 +28,7 @@ function Users() {
                 </div>
 
                 <div className="list">
-                <div className="user">
+                    <div className="user">
                         <div className="headerUser">
                             <div className="infoUser" >
                                 <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
@@ -60,9 +60,9 @@ function Users() {
 
         <Actions open={showDelete} onClose={handleDeleteClose}>
             <div className="containerModal">
-                <p className="titleModal">Excluir usuario</p>
+                <p className="titleModal">Excluir Usuário</p>
                 <div className="line" />
-                <p>Gostaria de excluir este usuario ?</p>
+                <p>Gostaria de excluir este usuário ?</p>
                 <div className="group">
                 <button
                     type="button"

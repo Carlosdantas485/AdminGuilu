@@ -9,6 +9,7 @@ import NewUser from './pages/newUser';
 import RecoverPassword from './pages/recoverPassword';
 import Users from './pages/users';
 import Company from './pages/company';
+import NewCompany from './pages/NewCompany';
 
 export default function Routes() {
     return (
@@ -22,6 +23,7 @@ export default function Routes() {
                 <Route path="/recoverPassword" component={RecoverPassword} />
                 <Route path="/usersList" component={Users} />
                 <Route path="/company" component={Company} />
+                <Route path="/NewCompany" component={NewCompany} />
             </Switch>
         </BrowserRouter>
     );

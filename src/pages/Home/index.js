@@ -16,19 +16,19 @@ function Home() {
 
                 <div className="container">
                     <div className="box" id="users">
-                        <h1>Usuarios</h1>
+                        <h1>Usuários</h1>
                         <div className="Option_Home">
                             <Link className="link" to="newCompany">
-                                <h2>Registrar empresa</h2>
+                                <h2>Registrar Empresa</h2>
                                 <p>
                                     Cadastrar uma empresa para comecar a usar os
-                                    beneficios da WIINNER.
+                                    benefícios da WIINNER.
                                 </p>
                             </Link>
                         </div>
                         <div className="Option_Home">
                             <Link className="link" to="company">
-                                <h2>Listar empresa</h2>
+                                <h2>Listar Empresa</h2>
                                 <p>
                                     Veja a lista completa de todas as empresas
                                     participando da WIINNER.
@@ -37,17 +37,17 @@ function Home() {
                         </div>
                         <div className="Option_Home">
                             <Link className="link" to="/newUser">
-                                <h2>Registrar usuario</h2>
+                                <h2>Registrar Usuário</h2>
                                 <p>
-                                    Cadastre um novo usuario pertencente a uma empresa.
+                                    Cadastre um novo usuário pertencente a uma empresa.
                                 </p>
                             </Link>
                         </div>
                         <div className="Option_Home">
                             <Link className="link" to="/usersList">
-                                <h2>Listar usuario</h2>
+                                <h2>Listar Usuário</h2>
                                 <p>
-                                    Veja a todas as informações dos usuarios
+                                    Veja todas as informações dos usuários
                                     cadastrados.
                                 </p>
                             </Link>
@@ -65,7 +65,7 @@ function Home() {
                             <Link className="link" to="">
                                 <h2>Adicionar Dashboard</h2>
                                 <p>
-                                    Adicione um Dashboard para obter varias informações
+                                    Adicione um Dashboard para obter várias informações
                                     importantes.
                                 </p>
                             </Link>
@@ -83,7 +83,7 @@ function Home() {
                             <Link className="link" to="">
                                 <h2>Historico de uploads</h2>
                                 <p>
-                                    Adicione um Dashboard para obter varias informações
+                                    Adicione um Dashboard para obter várias informações
                                     importantes.
                                 </p>
                             </Link>

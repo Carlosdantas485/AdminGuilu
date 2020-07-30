@@ -16,7 +16,7 @@ export const Container = styled.div`
         border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
 
-        .user{
+        .Company{
             margin:20px 0;
 
 
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
             }
 
-            .infoUser{
+            .infoCompany{
                 display:flex;
                 align-items:center;
                 flex-direction:column;
@@ -257,8 +257,6 @@ export const Container = styled.div`
 
     }
 `;
-
-
 
 
 export const Actions = styled(Modal)`

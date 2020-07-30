@@ -26,20 +26,19 @@ export const Container = styled.div`
             .back{
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:150px;
+                width:130px;
                 height: 50px;
                 font-weight: bold;
                 padding: 5px 15px;
                 border-radius: 7px;
-                border:2px solid #E2EAD4;
+                border:2px solid #ccc;
                 font-size: 20px;
-                background-color: #696969;
+                background-color: #A8BC81 ;
                 color: #fff;
             }
 
             .back:hover{
-                background-color: #4F4F4F;
-                transform: scale(1.02);
+                background-color: #91aa5f;
                 transition: 0.3s;
             }
         }
@@ -48,6 +47,7 @@ export const Container = styled.div`
             margin:0;
             padding:0;
             color: #A8BC81;
+            font-size: 35px;
         }
 
         .list{
@@ -55,8 +55,7 @@ export const Container = styled.div`
                 margin-top: 20px;
                 padding:10px ;
                 margin-top: 20px 0;
-                border:3px double grey;
-                border-radius:5px;
+                border-radius:10px;
                 background-color:#E2EAD4;
 
                .headerUser{
@@ -155,31 +154,33 @@ export const Actions = styled(Modal)`
     margin-top: 30px;
 
     .back {
-      background-color: red;
-      color: #fff;
-      border-radius: 5px;
-      width: 100px;
-      height: 30px;
-      border: 0;
-      font-weight:bold;
-      font: 500 18px 'Roboto', sans-serif;
-      box-shadow: 1px 1px 2px grey;
+        background-color: red;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:100px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
 
     }
 
     .send {
-      background-color: #A8BC81;
-      color: #fff;
-      border-radius: 5px;
-      width: 100px;
-      height: 30px;
-      border: 0;
-      font-weight:bold;
-      font: 500 18px 'Roboto', sans-serif;
-      box-shadow: 1px 1px 2px grey;
+        background-color: #A8BC81;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:100px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
 
     }
 }
 `;
-
-

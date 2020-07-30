@@ -186,7 +186,7 @@ export const Container = styled.div`
                 border: none;
                 box-shadow: 1px 1px 2px grey;
                 margin-top: 20px;
-                width:150px;
+                width:130px;
                 height: 50px;
                 font-weight: bold;
                 padding: 5px 15px;

@@ -1,86 +1,189 @@
 import styled from 'styled-components';
+import { Modal } from '@material-ui/core';
 
 export const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
     display: flex;
     justify-content: center;
 
-    .company-list {
-        margin-top: 2%;
-        width: 90%;
-        margin-right:5%;
-        background: #fff;
-        border-radius: 5px;
-        font-family: 'Roboto',sans-serif;
+    .container{
+        width:100%;
+        padding: 20px;
+        margin: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px grey;
 
+        .headerPage{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+
+            .back{
+                border: none;
+                box-shadow: 1px 1px 2px grey;
+                width:130px;
+                height: 50px;
+                font-weight: bold;
+                padding: 5px 15px;
+                border-radius: 7px;
+                border:2px solid #ccc;
+                font-size: 20px;
+                background-color: #A8BC81 ;
+                color: #fff;
+            }
+
+            .back:hover{
+                background-color: #91aa5f;
+                transition: 0.3s;
+            }
+        }
+
+        h1{
+            margin:0;
+            padding:0;
+            color: #A8BC81;
+            font-size: 35px;
+
+        }
+
+        .list{
+            .Company{
+                margin-top: 20px;
+                padding:10px ;
+                margin-top: 20px 0;
+                border-radius:10px;
+                background-color:#E2EAD4;
+
+               .headerCompany{
+                    display:flex;
+                    justify-content:space-between;
+                    flex-wrap:wrap;
+
+                    h2{
+                        background-color:#fff;
+                        padding: 8px;
+                        border-radius:50px;
+                        border:1px solid grey;
+                        font-size: 15px;
+                        margin-right:10px;
+                    }
+
+                    .infoCompany{
+                        display: flex;
+                        flex-wrap:wrap;
+                    }
+
+                   .options{
+                       display:flex;
+
+                       #pen{
+                           margin-right:10px;
+                       }
+
+                       .icon{
+                           color:#A8BC81;
+                           background-color:#fff;
+                           padding: 5px;
+                           border-radius:5px;
+
+                           &:hover{
+                               color: red;
+                               cursor: pointer;
+                           }
+                       }
+                   }
+               }
+
+            }
+        }
     }
+    @media(max-width: 768px){
+        .list{
+            .Company{
+               .headerCompany{
 
-    .text {
-        width: 100%;
-        background: #E2EAD4;
+                    h2{
+                        width:100%;
+                    }
+               }
+
+            }
+        }
     }
-
-    .company-name {
-        font-weight: bold;
-    }
-
-    .company-list.text p {
-        margin: 5px 0 10px 5px;
-        padding: 2px;
-    }
-
-    .company-list ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-inline-start: 0;
-    }
-
-
-    .tittle {
-        color: #B8CF8C;
-        padding: 2%;
-        margin: 2%;
-        font-size: 25px;
-    }
-
-    .company-list li {
-        display: flex;
-        justify-content: space-between;
-	    width: 90%;
-        height: auto;
-        color: #636363;
-        background: #E2EAD4;
-        border: 3px double #000;
-        border-radius: 5px;
-        margin-bottom: 10px;
-
-
-    }
-
-    .company-list.button {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        background: #E2EAD4;
-
-    }
-
-    .company-list button {
-        margin: 0 5px 5px 0;
-    }
-
-
-    .company-list button svg {
-        height: 15px;
-        width: 15px;
-    }
-
-    .modal-delete{
-        background:#fff;
-        width: 100%;
-        height: 100%;
-        background: rgba (0,0,0,0.5)
-    }
-
 `;
+
+export const Actions = styled(Modal)`
+  display: flex;
+  justify-content: center;
+
+  .containerModal {
+    width: 500px;
+    height: 200px;
+    background-color: #E2EAD4;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 10%;
+    padding: 15px;
+
+  }
+
+  .titleModal {
+    font: 600 25px Mukta, sans-serif;
+    color: #000;
+    margin: 20px 0 15px;
+  }
+
+  .line {
+    border-bottom: 5px solid #000;
+    width: 10%;
+  }
+
+  p {
+    margin-top: 15px;
+    font-weight:bold;
+  }
+
+  .group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .back {
+        background-color: red;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:100px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
+
+    }
+
+    .send {
+        background-color: #A8BC81;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:100px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
+
+    }
+}
+`;
+
+

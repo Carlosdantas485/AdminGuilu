@@ -16,23 +16,22 @@ function Users() {
         <>
             <Header><div></div></Header>
 
-
             <Container>
                 <div className="container">
-                    <div className="user">
-                        <div className="infoUser">
+                    <div className="Company">
+                        <div className="infoCompany">
                             <img clasName="logo" src={Logo}/>
-                            <h2>Criar Novo Usuário</h2>
+                            <h2>Criar Nova Empresa</h2>
                         </div>
                     </div>
                     <div className="inputs">
                         <div className="box">
                             <div className="name">
-                                <h3>Nome completo</h3>
+                                <h3>Nome Da Empresa</h3>
                                 <input type="text" placeholder="Nome completo" ></input>
                             </div>
                             <div className="cel">
-                                <h3>Celular</h3>
+                                <h3>Telefone</h3>
                                 <input type="text" placeholder="(XX) XXXXX-XXXX" ></input>
                             </div>
                         </div>
@@ -54,7 +53,7 @@ function Users() {
                                 <input type="text" placeholder="XXXXX-XXX"></input>
                             </div>
                             <div className="number">
-                                <h3>Número</h3>
+                                <h3>Numero</h3>
                                 <input type="text" placeholder="Numero"></input>
                             </div>
                             <div className="complement">
@@ -125,9 +124,9 @@ function Users() {
 
         <Actions open={showDelete} onClose={handleDeleteClose}>
             <div className="containerModal">
-                <p className="titleModal">Cadastrar Usuário</p>
+                <p className="titleModal">Cadastrar Empresa</p>
                 <div className="line" />
-                <p>Gostaria de cadastrar este usuário ?</p>
+                <p>Gostaria de cadastrar esta empresa ?</p>
                 <div className="group">
                 <button
                     type="button"
