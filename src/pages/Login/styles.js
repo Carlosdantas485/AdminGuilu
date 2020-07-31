@@ -43,12 +43,14 @@ export const Container = styled.div`
             }
 
             input {
+                width:100%;
                 background: #f2f1f1;
                 border-radius: 10px;
                 box-sizing: border-box;
                 padding: 1rem 0.7rem;
-                border: none;
+                border: 1px solid #E2EAD4;
                 margin-top: 0.8rem;
+                font-size:18px;
 
                 ::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -303,13 +305,13 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 376px) {
-        
+
         .cardDiv {
             width: 300px;
             height: 400px;
             padding: 5px 10px;
         }
-           
+
     }
 
     @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
@@ -336,7 +338,7 @@ export const Container = styled.div`
         background: rgba(255, 255, 255, 0.2);
         animation: animate 25s linear infinite;
         bottom: -150px;
-        
+
     }
 
     .circles li:nth-child(1){

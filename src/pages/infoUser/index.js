@@ -1,19 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import { Container, Edit } from './styles';
+import { FaUserCircle } from 'react-icons/fa';
+import Header from '../../Components/header/index';
+
+
 import { Link } from 'react-router-dom';
 
-import Header from '../../Components/header/index';
-import { Container } from './styles';
-import { FaUserCircle } from 'react-icons/fa';
 
-
-function infoUser() {
-
+function Users() {
+    const [showEdit, setShowEdit] = useState(false);
+    const handleEditShow = () => {setShowEdit(true);};
+    const handleEditClose = () => setShowEdit(false);
     return (
         <>
-            <Header>
-                <div/>
-            </Header>
+        <Header>
+            <div>
 
+            </div>
+        </Header>
             <Container>
                 <div className="container">
                     <div className="user">
@@ -40,17 +45,11 @@ function infoUser() {
                         <div className="box">
                             <div className="email">
                                 <h3>E-mail</h3>
-                                <div className="edit">
                                   <input type="text" placeholder="E-mail"/>
-                                  <button>Editar</button>
-                                </div>
                             </div>
                             <div className="cpf">
                                 <h3>CPF/CNPJ</h3>
-                                <div className="edit">
                                     <input type="text" placeholder="CPF/CNPJ"></input>
-                                    <button>Editar</button>
-                                </div>
                             </div>
                         </div>
 
@@ -124,13 +123,37 @@ function infoUser() {
                             <button className="back">Voltar</button>
                         </Link>
                         <Link to="/home">
-                            <button className="save">Salvar</button>
+                            <button className="save" onClick={()=> handleEditShow}>Salvar Altereação</button>
                         </Link>
                     </div>
                 </div>
             </Container>
+
+            <Edit open={showEdit} onClose={handleEditClose}>
+                <div className="containerModal">
+                    <p className="titleModal">Editar Usuário</p>
+                    <div className="line" />
+                    <p> realmente desja editar estas informações ?</p>
+                    <div className="group">
+                    <button
+                        type="button"
+                        className="back"
+                        onClick={()=>handleEditClose()}
+                    >
+                        Não
+                    </button>
+                    <button
+                        type="submit"
+                        className="send"
+                        onClick={()=>handleEditClose()}
+                    >
+                        Sim
+                    </button>
+                    </div>
+                </div>
+            </Edit>
         </>
     );
 }
 
-export default infoUser;
+export default Users;

@@ -54,19 +54,38 @@ export const Container = styled.div`
 
                 h3{
                     margin:0;
-                    font-size: 13px;
+                    font-size: 18px;
                     margin-bottom: 5px;
                     color: #A1BF73;
                     font-weight: bold;
                 }
 
                 input{
-                    height: 15px;
-                    padding: 5px 15px;
-                    border-radius: 50px ;
-                    border:1px solid grey;
-                    font-size: 15px;
-                    background-color:#E2EAD4;
+                    background: #f2f1f1;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    padding: 1rem 0.7rem;
+                    border: 1px solid #E2EAD4;
+                    margin-top: 0.8rem;
+                    font-size:18px;
+                    ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #9ead82;
+                        opacity: 1; /* Firefox */
+                        font-size: 19px;
+                    }
+
+                    :-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
+                        color: #9ead82;
+                        font-size: 19px;
+                    }
+
+                    ::-ms-input-placeholder {
+                        /* Microsoft Edge */
+                        color: #9ead82;
+                        font-size: 19px;
+                    }
                 }
                 .name{
                     width: 64%;
@@ -87,37 +106,25 @@ export const Container = styled.div`
                     display:flex;
                     flex-direction:column;
                     input{
-                        width:75%;
+                        width:100%;
                         border-right:0;
-                        border-radius:50px 0px 0px 50px;
+                        border-radius:10px ;
 
                     }
-                    button{
-                        width:50px;
-                        height:27px;
-                        font-size:15px;
-                        border-radius:0px 50px 50px 0px;
-                        border: 1px solid grey;
-                    }
+
                 }
 
                 .cpf{
-                    width: 45%;
+                    width: 47%;
                     display:flex;
                     flex-direction:column;
                     input{
-                        width:71%;
+                        width:100%;
                         border-right:0;
-                        border-radius:50px 0px 0px 50px;
+                        border-radius:10px;
 
                     }
-                    button{
-                        width:50px;
-                        height:27px;
-                        font-size:15px;
-                        border-radius:0px 50px 50px 0px;
-                        border: 1px solid grey;
-                    }
+
                 }
 
                 .cep{
@@ -167,11 +174,15 @@ export const Container = styled.div`
                     flex-direction:column;
 
                     select{
-                        border-radius:50px;
-                        padding:5px 10px;
-                        margin-top:5px;
-                        height: 25px;
-                        width: 80px;
+                        margin-top: 19px;
+                        width:100px;
+                        height:56px;
+                        font-size:20px;
+                        font-weight: bold;
+                        border-radius:10px;
+                        border: 1px solid #E2EAD4;
+                        background-color:grey;
+                        color: #fff;
                     }
                 }
             }
@@ -187,7 +198,7 @@ export const Container = styled.div`
                 box-shadow: 1px 1px 2px grey;
                 margin-top: 20px;
                 width:130px;
-                height: 50px;
+                height: 60px;
                 font-weight: bold;
                 padding: 5px 15px;
                 border-radius: 7px;
@@ -300,19 +311,20 @@ export const Container = styled.div`
     }
 `;
 
-export const Actions = styled(Modal)`
+export const Edit = styled(Modal)`
   display: flex;
   justify-content: center;
 
   .containerModal {
     width: 500px;
     height: 200px;
-    background-color: #fff;
+    background-color: #E2EAD4;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 10%;
     padding: 15px;
+
   }
 
   .titleModal {
@@ -326,33 +338,42 @@ export const Actions = styled(Modal)`
     width: 10%;
   }
 
-  p {
-    margin-top: 15px;
-  }
-
+    p{
+        margin-top: 10px;
+    }
   .group {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 
     .back {
-      background-color: #000;
-      color: #fff;
-      font: 500 15px 'Roboto', sans-serif;
-      border-radius: 5px;
-      width: 100px;
-      height: 30px;
-      border: 0;
+        background-color: red;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:120px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
+
     }
 
     .send {
-      background-color: red;
-      color: #fff;
-      border-radius: 5px;
-      width: 100px;
-      height: 30px;
-      border: 0;
-      font: 500 15px 'Roboto', sans-serif;
+        background-color: #A8BC81;
+        color: #fff;
+        border: none;
+        box-shadow: 1px 1px 2px grey;
+        width:110px;
+        height: 40px;
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 7px;
+        border:2px solid #E2EAD4;
+        font-size: 20px;
+
     }
-  }
+}
 `;

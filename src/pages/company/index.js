@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { Container, Actions } from './styles';
+import { Container, Actions, Edit } from './styles';
 import Header from '../../Components/header';
 
 import { MdDelete } from "react-icons/md";
@@ -12,6 +12,10 @@ function Companys() {
     const [showDelete, setShowDelete] = useState(false);
     const handleDeleteShow = () => {setShowDelete(true);};
     const handleDeleteClose = () => setShowDelete(false);
+
+    const [showEdit, setShowEdit] = useState(false);
+    const handleEditShow = () => {setShowEdit(true);};
+    const handleEditClose = () => setShowEdit(false);
     return (
         <>
             <Header><div></div></Header>
@@ -37,7 +41,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -49,7 +53,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -61,7 +65,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -73,7 +77,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -85,7 +89,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -97,7 +101,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -109,7 +113,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -121,7 +125,7 @@ function Companys() {
                                 <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
-                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                                 <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                             </div>
                         </div>
@@ -154,6 +158,32 @@ function Companys() {
                 </div>
             </div>
             </Actions>
+            <Edit open={showEdit} onClose={handleEditClose}>
+                <div className="containerModal">
+                    <p className="titleModal">Editar Empresa</p>
+                    <div className="line" />
+                    <div className="inputs-modal">
+                        <input placeholder="Nome da empresa"/>
+                        <input placeholder="E-mail da empresa"/>
+                    </div>
+                    <div className="group">
+                    <button
+                        type="button"
+                        className="back"
+                        onClick={()=>handleEditClose()}
+                    >
+                        Cancelar
+                    </button>
+                    <button
+                        type="submit"
+                        className="send"
+                        onClick={()=>handleEditClose()}
+                    >
+                        Editar
+                    </button>
+                    </div>
+                </div>
+            </Edit>
         </>
     );
 }

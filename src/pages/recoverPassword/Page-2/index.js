@@ -14,8 +14,10 @@ function recoverPassword2() {
 
             <Container>
                 <div class="container" >
-                <img src={Logo} alt="logo"/>
-                    <h1>Recuperar Senha</h1>
+                    <div className="div-logo">
+                        <img src={Logo} alt="logo"/>
+                    </div>
+                    <h1>Redefinir Senha</h1>
                     <div className="confirm">
                     <h2> E-mail</h2>
                     <input type="text" placeholder="E-mail"/>

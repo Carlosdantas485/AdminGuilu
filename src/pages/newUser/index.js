@@ -18,7 +18,7 @@ function Users() {
                     <div className="Company">
                         <div className="infoCompany">
                             <img clasName="logo" src={Logo}/>
-                            <h2>Criar Novo Usuário</h2>
+                            <h2>Cadastrar Novo Usuário</h2>
                         </div>
                     </div>
 

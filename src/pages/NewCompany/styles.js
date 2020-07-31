@@ -55,15 +55,37 @@ export const Container = styled.div`
                 margin: 0;
                 margin-top: 10px;
                 font-size: 18px;
+                color: #A8BC81;
+                font-weight: bold;
             }
+
             input{
-                margin-top: 5px;
-                width:99%;
-                height: 35px;
-                border:1px solid grey;
-                border-radius: 50px;
-                font-size: 18px;
-                background-color:#E2EAD4;
+                width:100%;
+                background: #f2f1f1;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 1rem 0.7rem;
+                border: 1px solid #E2EAD4;
+                margin-top: 0.8rem;
+                font-size:18px;
+                ::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #9ead82;
+                    opacity: 1; /* Firefox */
+                    font-size: 19px;
+                }
+
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #9ead82;
+                    font-size: 19px;
+                }
+
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #9ead82;
+                    font-size: 19px;
+                }
             }
 
             .name{

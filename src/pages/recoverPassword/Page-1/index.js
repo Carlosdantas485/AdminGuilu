@@ -13,7 +13,9 @@ function recoverPassword1() {
 
             <Container>
                 <div class="container" >
-                    <img src={Logo} alt="logo"/>
+                    <div className="div-logo">
+                        <img src={Logo} alt="logo"/>
+                    </div>
                     <h1>Recuperar Senha</h1>
                     <div className="confirm">
                         <input type="text" placeholder="E-mail"/>
