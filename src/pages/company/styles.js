@@ -10,7 +10,7 @@ export const Container = styled.div`
     justify-content: center;
 
     .container{
-        width:100%;
+        width:40%;
         padding: 20px;
         margin: 15px;
         background-color: #fff;
@@ -48,16 +48,24 @@ export const Container = styled.div`
             padding:0;
             color: #A8BC81;
             font-size: 35px;
+        }
+
+        .btn-back{
+            margin:10px 0;
 
         }
 
         .list{
+            display:flex;
+            flex-direction:column;
+
             .Company{
-                margin-top: 20px;
+                margin: 5px ;
                 padding:10px ;
                 margin-top: 20px 0;
                 border-radius:10px;
                 background-color:#E2EAD4;
+                box-shadow: 1px 1px 2px grey;
 
                .headerCompany{
                     display:flex;
@@ -65,17 +73,17 @@ export const Container = styled.div`
                     flex-wrap:wrap;
 
                     h2{
-                        background-color:#fff;
+                        margin:0;
+                        margin-top: 10px;
                         padding: 8px;
-                        border-radius:50px;
-                        border:1px solid grey;
+                        border-radius:10px;
                         font-size: 15px;
-                        margin-right:10px;
                     }
 
                     .infoCompany{
                         display: flex;
-                        flex-wrap:wrap;
+                        flex-direction:column;
+                        margin-right: 10px;
                     }
 
                    .options{
@@ -102,17 +110,38 @@ export const Container = styled.div`
             }
         }
     }
-    @media(max-width: 768px){
+    @media(max-width: 1200px){
+        .container{
+            width: 100%;
+        }
+
         .list{
             .Company{
+                margin: 10px 0;
+
                .headerCompany{
 
                     h2{
-                        width:100%;
+                        font-size: 20px;
                     }
                }
 
             }
+        }
+        .options{
+            margin:10px 0;
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
+        }
+    }
+
+    @media(max-width: 568px){
+        .btn-back{
+            margin:10px 0;
+            width:100%;
+            display:flex;
+            justify-content: flex-end;
         }
     }
 `;
@@ -185,5 +214,3 @@ export const Actions = styled(Modal)`
     }
 }
 `;
-
-

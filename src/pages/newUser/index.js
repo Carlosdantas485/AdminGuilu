@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
-
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/guilu_preto.jpeg';
-
-
+import Logo from '../../assets/logo.jpeg';
 import { Link } from 'react-router-dom';
 
 
@@ -16,102 +13,41 @@ function Users() {
         <>
             <Header><div></div></Header>
 
-
             <Container>
                 <div className="container">
-                    <div className="user">
-                        <div className="infoUser">
+                    <div className="Company">
+                        <div className="infoCompany">
                             <img clasName="logo" src={Logo}/>
                             <h2>Criar Novo Usuário</h2>
                         </div>
                     </div>
+
                     <div className="inputs">
                         <div className="box">
-                            <div className="name">
-                                <h3>Nome completo</h3>
-                                <input type="text" placeholder="Nome completo" ></input>
-                            </div>
-                            <div className="cel">
-                                <h3>Celular</h3>
-                                <input type="text" placeholder="(XX) XXXXX-XXXX" ></input>
+                            <div className="user">
+                                <h3>Usuário</h3>
+                                <input type="text" placeholder="  Nome do usuários" ></input>
                             </div>
                         </div>
 
                         <div className="box">
                             <div className="email">
                                 <h3>E-mail</h3>
-                                <input type="text" placeholder="E-mail"></input>
-                            </div>
-                            <div className="cpf">
-                                <h3>CPF/CNPJ</h3>
-                                <input type="text" placeholder="CPF/CNPJ"></input>
+                                <input type="text" placeholder=" E-mail"></input>
                             </div>
                         </div>
 
                         <div className="box">
-                            <div className="cep">
-                                <h3>Cep</h3>
-                                <input type="text" placeholder="XXXXX-XXX"></input>
+                            <div className="password">
+                                <h3>Senha</h3>
+                                <input type="text" placeholder="  Senha"></input>
                             </div>
-                            <div className="number">
-                                <h3>Número</h3>
-                                <input type="text" placeholder="Numero"></input>
-                            </div>
-                            <div className="complement">
-                                <h3>Complemento</h3>
-                                <input type="text" placeholder="Rua do usuário"></input>
+                            <div className="confirm">
+                                <h3>Confirmar Senha</h3>
+                                <input type="text" placeholder="  Confirmar senha"></input>
                             </div>
                         </div>
 
-                        <div className="box">
-                            <div className="bairro">
-                                <h3>Bairro</h3>
-                                <input type="text" placeholder="Bairro do usuário"></input>
-                            </div>
-                            <div className="logradouro">
-                                <h3>Logradouro</h3>
-                                <input type="text" placeholder="Logradouro do usuário"></input>
-                            </div>
-                        </div>
-
-                        <div className="box">
-                            <div className="city">
-                                <h3>Cidade</h3>
-                                <input type="text" placeholder="Cidade do usuário"></input>
-                            </div>
-                            <div className="uf">
-                                <label for="cars">UF</label>
-
-                                <select name="cars" id="cars">
-                                    <option value="Acre">AC</option>
-                                    <option value="Alagoas">AL</option>
-                                    <option value="Amapá">AP</option>
-                                    <option value="Amazonas">AM</option>
-                                    <option value="Bahia">BA</option>
-                                    <option value="Ceará">CE</option>
-                                    <option value="Distrito Federal">DF</option>
-                                    <option value="Espirito Santo">ES</option>
-                                    <option value="Goiás">GO</option>
-                                    <option value="Maranhão">MA</option>
-                                    <option value="Mato Grosso">MT</option>
-                                    <option value="Mato Grosso do Sul">MS</option>
-                                    <option value="Minas Gerais">MG</option>
-                                    <option value="Pará">PA</option>
-                                    <option value="Paraiba">PB</option>
-                                    <option value="Pernambuco">PE</option>
-                                    <option value="Piauí">PI</option>
-                                    <option value="Rio De Janeiro">RJ</option>
-                                    <option value="Rio Grande Do Norte">RN</option>
-                                    <option value="Rio Grande Do Sul">RS</option>
-                                    <option value="Rondônia">RO</option>
-                                    <option value="Roraima">RR</option>
-                                    <option value="Santa Catarina">SC</option>
-                                    <option value="São Paulo">SP</option>
-                                    <option value="Sergipe">SE</option>
-                                    <option value="Tocantins">TO</option>
-                                </select>
-                            </div>
-                        </div>
                     </div>
                     <div className="options">
                         <Link to="/home">
@@ -127,7 +63,7 @@ function Users() {
             <div className="containerModal">
                 <p className="titleModal">Cadastrar Usuário</p>
                 <div className="line" />
-                <p>Gostaria de cadastrar este usuário ?</p>
+                <p>Gostaria de cadastrar esta usuário ?</p>
                 <div className="group">
                 <button
                     type="button"

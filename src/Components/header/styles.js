@@ -69,7 +69,7 @@ export const Header = styled.div`
         .content {
             flex-direction: row-reverse;
             margin-bottom: 0.5rem;
-            
+
             .infoDiv {
                 margin:0;
                 .nameUser {

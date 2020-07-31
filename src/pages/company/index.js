@@ -19,20 +19,22 @@ function Companys() {
         <Container>
             <div className="container">
                 <div className="headerPage">
-                    <h1>Lista De Empresas</h1>
-                    <Link to="/home">
-                        <button className="back">
-                            Voltar
-                        </button>
-                    </Link>
+                    <h1>Lista de Empresas</h1>
+                    <div className="btn-back">
+                        <Link to="/home">
+                            <button className="back">
+                                Voltar
+                            </button>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="list">
                     <div className="Company">
                         <div className="headerCompany">
                             <div className="infoCompany" >
-                                <h2>Guilu Undergound</h2>
-                                <h2>GuiluUndergound@timeguilu.com</h2>
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
                                 <FiEdit2 size="20" className="icon" id="pen"/>
@@ -43,8 +45,8 @@ function Companys() {
                     <div className="Company">
                         <div className="headerCompany">
                             <div className="infoCompany" >
-                                <h2>Guilu of legends</h2>
-                                <h2>Guiluoflegends@timeguilu.com</h2>
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
                                 <FiEdit2 size="20" className="icon" id="pen"/>
@@ -55,8 +57,8 @@ function Companys() {
                     <div className="Company">
                         <div className="headerCompany">
                             <div className="infoCompany" >
-                                <h2>Guilu Hero</h2>
-                                <h2>GuiluHero@timeguilu.com</h2>
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
                             </div>
                             <div className="options">
                                 <FiEdit2 size="20" className="icon" id="pen"/>
@@ -64,7 +66,66 @@ function Companys() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="Company">
+                        <div className="headerCompany">
+                            <div className="infoCompany" >
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="headerCompany">
+                            <div className="infoCompany" >
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="headerCompany">
+                            <div className="infoCompany" >
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="headerCompany">
+                            <div className="infoCompany" >
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="headerCompany">
+                            <div className="infoCompany" >
+                                <h2 id="nameCompany">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailCompany">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Container>
@@ -74,7 +135,7 @@ function Companys() {
             <div className="containerModal">
                 <p className="titleModal">Excluir Empresa</p>
                 <div className="line" />
-                <p>Gostaria de excluir esta empresa ?</p>
+                <p>Gostaria de excluir este empresa ?</p>
                 <div className="group">
                 <button
                     type="button"

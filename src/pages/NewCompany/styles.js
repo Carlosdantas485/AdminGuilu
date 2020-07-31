@@ -10,6 +10,7 @@ export const Container = styled.div`
     justify-content: center;
 
     .container{
+        width:70%;
         padding: 20px;
         margin: 15px;
         background-color: #fff;
@@ -45,111 +46,49 @@ export const Container = styled.div`
             }
 
         }
-        .inputs{
-            width: 100%;
 
-            .box{
+        .box{
+            width:100%;
+            display: flex;
+
+            h3{
+                margin: 0;
                 margin-top: 10px;
-                display:flex;
-                flex-wrap:wrap;
-
-                h3{
-                    margin:0;
-                    font-size: 13px;
-                    margin-bottom: 5px;
-                    color: #A1BF73;
-                    font-weight: bold;
-                }
-
-                input{
-                    height: 15px;
-                    padding: 5px 15px;
-                    border-radius: 50px ;
-                    border:1px solid grey;
-                    font-size: 15px;
-                    background-color:#E2EAD4;
-                }
-                .name{
-                    width: 64%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-
-                }
-                .cel{
-                    width: 34%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .email{
-                    width: 54%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .cpf{
-                    width: 44%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .cep{
-                    width: 26%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .number{
-                    width: 16%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-
-                }
-
-                .complement{
-                    width: 54.5%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .bairro{
-                    width: 54%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .logradouro{
-                    width: 44%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .city{
-                    width: 85%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .uf{
-                    display:flex;
-                    flex-direction:column;
-
-                    select{
-                        margin-top:5px;
-                        border-radius: 50px ;
-                        height: 25px;
-                        width: 80px;
-                    }
-                }
+                font-size: 18px;
+            }
+            input{
+                margin-top: 5px;
+                width:99%;
+                height: 35px;
+                border:1px solid grey;
+                border-radius: 50px;
+                font-size: 18px;
+                background-color:#E2EAD4;
             }
 
+            .name{
+                width:60%;
+                margin-right: 20px;
+            }
+
+            .user{
+                width:40%;
+            }
+
+            .email{
+                width:100%;
+            }
+
+            .password{
+                width:50%;
+                margin-right: 20px;
+            }
+
+            .confirm{
+                width:50%;
+            }
         }
+
         .options{
             margin-top: 25px;
             display: flex;
@@ -191,71 +130,39 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 768px){
+    @media(max-width: 1200px){
         .container{
             width:100%;
-            .inputs{
-                .box{
-                    margin:0;
-                    flex-direction:column;
-                    h3{
-                        margin-top:10px;
-                    }
+            .box{
+                width:100%;
+                display: flex;
+                flex-direction:column;
 
-                    .name{
-                    width: 100%;
-
-
-                    }
-                    .cel{
-                        width: 100%;
-                    }
-
-                    .email{
-                        width: 100%;
-
-                    }
-
-                    .cpf{
-                        width: 100%;
-
-                    }
-
-                    .cep{
-                        width: 100%;
-                    }
-
-                    .number{
-                        width: 100%;
-
-                    }
-
-                    .complement{
-                        width: 100%;
-                    }
-
-                    .bairro{
-                        width: 100%;
-                    }
-
-                    .logradouro{
-                        width: 100%;
-                    }
-
-                    .city{
-                        width: 100%;
-                    }
-
-                    .uf{
-                        margin-top:10px;
-                    }
-
+                .name{
+                    width:100%;
+                    margin-right: 20px;
                 }
 
+                .user{
+                    width:100%;
+                }
+
+                .email{
+                    width:100%;
+                }
+
+                .password{
+                    width:100%;
+                    margin-right: 20px;
+                }
+
+                .confirm{
+                    width:100%;
+                }
             }
         }
-
     }
+
 `;
 
 

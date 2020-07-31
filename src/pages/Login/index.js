@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useHistory, Link } from 'react-router-dom';
 import { Container } from './styles';
-import Logo from '../../assets/guilu_preto.jpeg';
+import Logo from '../../assets/logo.jpeg';
 
 function Login() {
     const History = useHistory();
@@ -12,13 +12,13 @@ function Login() {
     }
 
     function recoverPassword() {
-        History.push('recoverPassword');
+        History.push('recoverPassword1');
     }
 
     return (
         <>
             <Container>
-                
+
             <div class="area" >
                     <ul class="circles">
                         <li></li>

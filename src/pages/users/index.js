@@ -20,11 +20,13 @@ function Users() {
             <div className="container">
                 <div className="headerPage">
                     <h1>Lista de usuarios</h1>
-                    <Link to="/home">
-                        <button className="back">
-                            Voltar
-                        </button>
-                    </Link>
+                    <div className="btn-back">
+                        <Link to="/home">
+                            <button className="back">
+                                Voltar
+                            </button>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="list">
@@ -52,7 +54,78 @@ function Users() {
                             </div>
                         </div>
                     </div>
-
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="headerUser">
+                            <div className="infoUser" >
+                                <h2 id="nameUser">Carlos Alberto Dantas Filho</h2>
+                                <h2 id="emailUser">carlosdantas485@timeguilu.com</h2>
+                            </div>
+                            <div className="options">
+                                <FiEdit2 size="20" className="icon" id="pen"/>
+                                <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Container>

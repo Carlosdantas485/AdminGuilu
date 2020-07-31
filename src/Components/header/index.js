@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { FaUserCircle } from 'react-icons/fa';
 import { Header } from './styles';
-import Logo from '../../assets/guilu_preto.jpeg';
+import Logo from '../../assets/logo.jpeg';
 
 function header(){
     return (
