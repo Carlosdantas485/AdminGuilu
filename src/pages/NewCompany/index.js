@@ -3,12 +3,11 @@ import React, {useState} from 'react';
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
 import Logo from '../../assets/logo.jpeg';
-
 import { Link } from 'react-router-dom';
-
 
 function Users() {
     document.title = "Guilu - Cadastrar Empresa";
+
     const [showDelete, setShowDelete] = useState(false);
     const handleDeleteShow = () => {setShowDelete(true);};
     const handleDeleteClose = () => setShowDelete(false);
