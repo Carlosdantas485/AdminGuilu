@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
 
     .container{
         width: 40%;
@@ -21,7 +20,7 @@ export const Container = styled.div`
             justify-content: center;
             img{
                 margin-top: 20px;
-                width:400px;
+                width:200px;
             }
         }
         .confirm{
@@ -105,6 +104,7 @@ export const Container = styled.div`
             width: 100%;
         }
     }
+
 
 
 `;

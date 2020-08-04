@@ -3,12 +3,11 @@ import React, {useState} from 'react';
 import { Container, Edit } from './styles';
 import { FaUserCircle } from 'react-icons/fa';
 import Header from '../../Components/header/index';
-
-
 import { Link } from 'react-router-dom';
 
-
 function Users() {
+    document.title = "Guilu - Meu Usuario";
+
     const [showEdit, setShowEdit] = useState(false);
     const handleEditShow = () => {setShowEdit(true);};
     const handleEditClose = () => setShowEdit(false);

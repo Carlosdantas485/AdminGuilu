@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 
 
 function Users() {
+    document.title = "Guilu - Usuários";
+
     const [showDelete, setShowDelete] = useState(false);
     const handleDeleteShow = () => {setShowDelete(true);};
     const handleDeleteClose = () => setShowDelete(false);

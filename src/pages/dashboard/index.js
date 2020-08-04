@@ -6,13 +6,14 @@ import Header from '../../Components/header/index';
 import dashboardImg from '../../assets/dashboard.png'
 
 function dashboard() {
- 
+    document.title = "Guilu - Dashboard";
+
   return (
   <>
     <Header>
       <div/>
     </Header>
-  
+
     <Container>
       <div className="container">
         <img src={dashboardImg} alt="logo" />

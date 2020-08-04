@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin:0;
+    padding: 0;
+
 
     .container{
         width: 40%;
@@ -21,7 +23,7 @@ export const Container = styled.div`
             justify-content: center;
             img{
                 margin-top: 20px;
-                width:400px;
+                width:200px;
             }
         }
         .confirm{
@@ -66,7 +68,7 @@ export const Container = styled.div`
             .recover-btns{
                 width: 100%;
                 display:flex;
-                justify-content:space-between;
+                justify-content:center;
 
                 button{
                 margin-top: 15px;
@@ -79,17 +81,6 @@ export const Container = styled.div`
                 border-radius: 5px;
                 border:2px solid #fff;
                 font-size: 20px;
-                }
-
-                .back{
-                    background-color: #696969;
-                    color: white;
-
-                }
-
-                .back:hover{
-                    background-color: #4F4F4F;
-                    transition: 0.3s;
                 }
 
                 .recover{
@@ -108,9 +99,10 @@ export const Container = styled.div`
 
     @media(max-width: 1200px){
         .container{
-            width: 100%;
+            width: 80%;
         }
     }
+
 
 
 `;

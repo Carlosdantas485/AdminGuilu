@@ -5,7 +5,7 @@ import { Container } from './styles';
 import Header from '../../Components/header/index';
 
 function Home() {
-
+        document.title = "Guilu - Home";
     return (
         <>
             <Header>

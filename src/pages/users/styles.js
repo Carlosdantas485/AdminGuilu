@@ -10,7 +10,7 @@ export const Container = styled.div`
     justify-content: center;
 
     .container{
-        width:40%;
+        width:50%;
         padding: 20px;
         margin: 15px;
         background-color: #fff;

@@ -5,6 +5,8 @@ import { Container } from './styles';
 import Logo from '../../assets/logo.jpeg';
 
 function Login() {
+    document.title = "Guilu";
+
     const History = useHistory();
 
     function nav() {

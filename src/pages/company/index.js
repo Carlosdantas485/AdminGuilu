@@ -9,6 +9,9 @@ import { Link } from 'react-router-dom';
 
 
 function Companys() {
+
+        document.title = "Guilu - Empresas";
+
     const [showDelete, setShowDelete] = useState(false);
     const handleDeleteShow = () => {setShowDelete(true);};
     const handleDeleteClose = () => setShowDelete(false);

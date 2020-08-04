@@ -1,18 +1,15 @@
 import React from 'react';
 
-import Header from '../../../Components/header';
 import { Container } from './styles';
 import Logo from '../../../assets/logo.jpeg';
-
+import {Link} from 'react-router-dom';
 
 function recoverPassword2() {
+    document.title = "Guilu - Redefinir Senha";
     return (
         <>
-            <Header>
-                <div/>
-            </Header>
-
             <Container>
+
                 <div class="container" >
                     <div className="div-logo">
                         <img src={Logo} alt="logo"/>
@@ -31,8 +28,9 @@ function recoverPassword2() {
                     <h2> Confirme nova senha </h2>
                     <input type="password" placeholder="Confirmar senha"/>
                         <div className="recover-btns">
-                            <button className="back">Voltar</button>
-                            <button className="recover">Recuperar</button>
+                            <Link to="/">
+                                <button className="recover">Recuperar</button>
+                            </Link>
                         </div>
                     </div>
                 </div >
