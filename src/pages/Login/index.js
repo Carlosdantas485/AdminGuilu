@@ -3,7 +3,6 @@ import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import { Container } from './styles';
 import Logo from '../../assets/logo.jpeg';
-
 function Login() {
     document.title = "Guilu";
 

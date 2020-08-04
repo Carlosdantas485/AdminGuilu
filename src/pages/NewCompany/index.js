@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 function Users() {
+    document.title = "Guilu - Cadastrar Empresa";
     const [showDelete, setShowDelete] = useState(false);
     const handleDeleteShow = () => {setShowDelete(true);};
     const handleDeleteClose = () => setShowDelete(false);
