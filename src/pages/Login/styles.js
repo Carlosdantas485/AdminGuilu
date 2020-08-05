@@ -97,6 +97,9 @@ export const Container = styled.div`
         }
     }
 
+
+
+
     @media screen and (max-width: 1024px) {
         .cardDiv {
             width: 420px;
@@ -180,8 +183,8 @@ export const Container = styled.div`
 
     @media screen and (max-width: 740px) {
         .cardDiv {
-            width: 380px;
-            height: 45%;
+            width: 370px;
+            height: 65%;
 
             .logoDiv {
                 img {
@@ -214,50 +217,7 @@ export const Container = styled.div`
         }
     }
 
-    @media screen and (max-width: 415px) {
-        .cardDiv {
-            display: flex;
-            width: 400px;
-            height: 400px;
-            padding: 0 2rem;
-            justify-content: center;
 
-            .logoDiv {
-                img {
-                    width: 200px;
-                    height: auto;
-                }
-            }
-
-            .formDiv {
-                display: flex;
-                flex-direction: table-column;
-                align-items: center;
-
-                p {
-                    font-size: 25px;
-                }
-
-                input {
-                    width: 100%;
-                }
-            }
-
-            .btnDiv {
-                display: flex;
-                flex-direction: column;
-
-                button {
-                    width: 100%;
-                    margin-bottom: 0.6rem;
-                }
-
-                a {
-                    margin-bottom: 1rem;
-                }
-            }
-        }
-    }
 
     @media screen and (max-width: 376px) {
         .cardDiv {
@@ -314,7 +274,6 @@ export const Container = styled.div`
 
     }
 
-    @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
     .cardDiv{
         position: absolute;

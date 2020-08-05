@@ -9,8 +9,15 @@ export const Container = styled.div`
     justify-content: center;
 
     .link{
+        width: 100%;
         text-decoration:none;
         text-align:center;
+
+        .icon-info{
+            width: 100%;
+            display:flex;
+            justify-content: flex-end;
+        }
     }
 
     .container{
@@ -22,9 +29,8 @@ export const Container = styled.div`
 
     .box{
         width: 300px;
-        height: 610px;
+        height: 660px;
         padding: 5px 30px;
-        border-radius: 10px;
         background-color:#fff;
         border: 2px solid white;
         margin:15px;
@@ -44,13 +50,11 @@ export const Container = styled.div`
 
         .Option_Home{
             width: 280px;
-            height: 100px;
-            padding: 0.5px 25px;
+            height: 120px;
+            padding: 1px 25px;
             margin-top: 10px;
-            border-radius: 18px;
             background-color: #E2EAD4;
-            border:2px solid #E2EAD4;
-
+            transition: 0.3s;
             .logo{
                 width: 100px;
             }
@@ -73,21 +77,11 @@ export const Container = styled.div`
         }
         .Option_Home:hover{
             cursor: pointer;
-            transition: 0.5s;
+            transition: 0.3s;
             border:2px #A8BC81 solid;
+            transform: scale(1.03);
         }
 
-    }
-
-    .logo_guilu_box{
-        width: 100%;
-        display:flex;
-        justify-content: flex-end;
-
-        .logo_guilu{
-            height: 100px;
-            margin-right: 80px;
-        }
     }
 
 
@@ -106,7 +100,7 @@ export const Container = styled.div`
         }
 
          #dashboard,#archive{
-            height:27%;
+            height:26%;
         }
 
     }

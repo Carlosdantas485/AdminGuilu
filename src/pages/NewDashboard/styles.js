@@ -4,7 +4,7 @@ import { Modal } from '@material-ui/core';
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    margin-top: 13rem;
+    margin-top: 20px;
 
     display: flex;
     justify-content: center;
@@ -16,16 +16,11 @@ export const Container = styled.div`
         background-color: #fff;
         box-shadow: 1px 1px 2px grey;
 
-        .Company{
+        .Dashboard{
             margin:20px 0;
 
 
-            h2{
-                margin:0;
-                font-size: 35px;
-                color: #A8BC81;
-                font-weight: bold;
-            }
+
 
             h3{
                 margin:0;
@@ -33,26 +28,51 @@ export const Container = styled.div`
 
             }
 
-            .infoCompany{
+            .infoDashboard{
                 display:flex;
                 align-items:center;
-                flex-direction:column;
+                 justify-content: space-between;
+                h2{
+                    margin:0;
+                    font-size: 35px;
+                    color: #A8BC81;
+                    font-weight: bold;
+                }
 
                 img{
                     width: 170px;
                     margin-bottom: 20px;
                 }
+
+                .back{
+                    border: none;
+                    box-shadow: 1px 1px 2px grey;
+                    width:110px;
+                    height: 40px;
+                    font-weight: bold;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    background-color: #c4c4c4;
+                    color: white;
+
+                }
+
+                .back:hover{
+                    background-color: #b3b3b3;
+                    transition: 0.3s;
+                }
+
             }
 
         }
 
         .box{
             width:100%;
-            display: flex;
 
             h3{
                 margin: 0;
-                margin-top: 10px;
+                margin-top: 20px;
                 font-size: 18px;
                 color: #A8BC81;
                 font-weight: bold;
@@ -87,21 +107,13 @@ export const Container = styled.div`
                 }
             }
 
-            .user{
-                    width:100%;
-                }
-
-            .email{
+            .XML_LINK{
                 width:100%;
-            }
-
-            .password{
-                width:50%;
                 margin-right: 20px;
             }
 
-            .confirm{
-                width:50%;
+            .import_pc{
+                width:100%;
             }
         }
 
@@ -156,6 +168,10 @@ export const Container = styled.div`
                 .name{
                     width:100%;
                     margin-right: 20px;
+                }
+
+                .user{
+                    width:100%;
                 }
 
                 .email{

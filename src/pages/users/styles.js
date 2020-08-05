@@ -10,11 +10,10 @@ export const Container = styled.div`
     justify-content: center;
 
     .container{
-        width:50%;
+        width:55%;
         padding: 20px;
         margin: 15px;
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
 
         .headerPage{
@@ -26,13 +25,12 @@ export const Container = styled.div`
             .back{
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:130px;
-                height: 50px;
+                width:80px;
+                height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;
-                border-radius: 7px;
-                border:2px solid #ccc;
-                font-size: 20px;
+                border-radius: 5px;
+                font-size: 17px;
                 background-color: #A8BC81 ;
                 color: #fff;
             }
@@ -60,86 +58,74 @@ export const Container = styled.div`
             flex-direction:column;
 
             .user{
-                margin: 5px ;
-                padding:10px ;
+                display: flex;
+                justify-content:space-between;
+                flex-wrap: wrap;
+                margin: 5px;
                 margin-top: 20px 0;
                 background-color:#e3e3e3;
                 box-shadow: 1px 1px 2px grey;
+                padding: 10px;
 
-               .headerUser{
-                    display:flex;
-                    justify-content:space-between;
-                    flex-wrap:wrap;
-
+                .infoUser{
+                    text-align:center;
                     h2{
-                        margin:0;
-                        margin-top: 10px;
-                        padding: 8px;
-                        border-radius:10px;
                         font-size: 15px;
                     }
+                }
 
-                    .infoUser{
-                        display: flex;
-                        flex-direction:column;
-                        margin-right: 10px;
+                .icon_user{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+
+                    width: 60px;
+                    height: 60px;
+                    font-size: 35px;
+                    font-weight:bold;
+                    border-radius: 50%;
+                    border: 4px double white;
+                    background-color: grey;
+                    color: white;
+                }
+
+                #pen{
+                    margin-right:10px;
+                }
+
+                .icon{
+                    color:grey;
+                    padding: 5px;
+                    border-radius:5px;
+
+                    &:hover{
+                        color: red;
+                        cursor: pointer;
                     }
-
-                   .options{
-                       display:flex;
-
-                       #pen{
-                           margin-right:10px;
-                       }
-
-                       .icon{
-                            color:grey;
-                            padding: 5px;
-                            border-radius:5px;
-
-                           &:hover{
-                               color: red;
-                               cursor: pointer;
-                           }
-                       }
-                   }
                }
-
             }
         }
     }
+
     @media(max-width: 1200px){
         .container{
             width: 100%;
         }
-
-        .list{
-            .user{
-                margin: 10px 0;
-
-               .headerUser{
-
-                    h2{
-                        font-size: 20px;
-                    }
-               }
-
-            }
-        }
-        .options{
-            margin:10px 0;
-            width:100%;
-            display:flex;
-            justify-content: flex-end;
-        }
     }
 
-    @media(max-width: 568px){
-        .btn-back{
-            margin:10px 0;
-            width:100%;
-            display:flex;
-            justify-content: flex-end;
+    @media(max-width: 450px){
+        .user{
+            flex-direction:column;
+            align-items: center;
+
+            .options{
+                margin-top: 10px;
+                width:100%;
+                display: flex;
+                justify-content: flex-end;
+
+
+            }
         }
     }
 `;
@@ -151,7 +137,7 @@ export const Actions = styled(Modal)`
   .containerModal {
     width: 500px;
     height: 200px;
-    background-color: #E2EAD4;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -186,12 +172,11 @@ export const Actions = styled(Modal)`
         color: #fff;
         border: none;
         box-shadow: 1px 1px 2px grey;
-        width:100px;
+        width:120px;
         height: 40px;
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }
@@ -201,12 +186,11 @@ export const Actions = styled(Modal)`
         color: #fff;
         border: none;
         box-shadow: 1px 1px 2px grey;
-        width:100px;
+        width:120px;
         height: 40px;
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }
@@ -220,7 +204,7 @@ export const Edit = styled(Modal)`
   .containerModal {
     width: 500px;
     height: 300px;
-    background-color: #E2EAD4;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -286,7 +270,6 @@ export const Edit = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }
@@ -301,7 +284,6 @@ export const Edit = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }

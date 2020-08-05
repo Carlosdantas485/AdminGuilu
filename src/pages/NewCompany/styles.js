@@ -14,7 +14,6 @@ export const Container = styled.div`
         padding: 20px;
         margin: 15px;
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
 
         .Company{
@@ -89,12 +88,12 @@ export const Container = styled.div`
             }
 
             .name{
-                width:60%;
+                width:50%;
                 margin-right: 20px;
             }
 
             .user{
-                width:40%;
+                width:50%;
             }
 
             .email{
@@ -119,23 +118,22 @@ export const Container = styled.div`
             button{
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:130px;
-                height: 50px;
+                width:110px;
+                height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;
                 border-radius: 5px;
-                border:2px solid #fff;
-                font-size: 20px;
+                font-size: 17px;
             }
 
             .back{
-                background-color: #696969;
+                background-color: #c4c4c4;
                 color: white;
 
             }
 
             .back:hover{
-                background-color: #4F4F4F;
+                background-color: #b3b3b3;
                 transition: 0.3s;
             }
 
@@ -195,7 +193,7 @@ export const Actions = styled(Modal)`
   .containerModal {
     width: 500px;
     height: 200px;
-    background-color: #E2EAD4;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -235,7 +233,6 @@ export const Actions = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }
@@ -250,7 +247,6 @@ export const Actions = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }

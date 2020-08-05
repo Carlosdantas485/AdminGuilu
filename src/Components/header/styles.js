@@ -19,6 +19,7 @@ export const Header = styled.div`
     .content {
         display: flex;
         align-items: center;
+
         .infoDiv {
             display: flex;
             flex-direction: column;
@@ -44,20 +45,50 @@ export const Header = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 2.6rem;
+            margin-right: 0.6rem;
             border: 5px solid #a8bc81;
             border-radius: 50%;
         }
+        .exit1{
+            width:40px;
+            height:15px;
+            background-color: red;
+            padding: 8px 10px;
+            border-radius:5px;
+            margin-right:.6rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .exit2{
+        display: none;
     }
 
     @media (max-width: 768px) {
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content:center;
         height: 190px;
         padding-top: 20px;
-        margin-bottom: 2rem;
+
+        .exit2{
+
+            width:80px;
+            height:20px;
+            background-color: red;
+            padding: 8px 10px;
+            border-radius:5px;
+            margin-right:.6rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
 
         .logo {
             img {
@@ -70,6 +101,7 @@ export const Header = styled.div`
             flex-direction: row-reverse;
             margin-bottom: 0.5rem;
 
+
             .infoDiv {
                 margin:0;
                 .nameUser {
@@ -78,6 +110,10 @@ export const Header = styled.div`
             }
             .avatar {
                 margin-right: 1rem;
+            }
+
+            .exit1{
+                display: none;
             }
         }
     }

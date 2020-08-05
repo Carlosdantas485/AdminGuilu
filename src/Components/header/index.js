@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { FaUserCircle } from 'react-icons/fa';
 import { Header } from './styles';
+import { IoIosPower } from "react-icons/io";
 import Logo from '../../assets/logo.jpeg';
 
 function header(){
@@ -19,6 +20,17 @@ function header(){
                 <div className="avatar">
                     <FaUserCircle size="50" color="#999" />
                 </div>
+
+                <div className="exit1">
+                    <Link to="/">
+                        <IoIosPower size="25" color="#fff"></IoIosPower>
+                    </Link>
+                </div>
+            </div>
+            <div className="exit2">
+                <Link to="/">
+                    <IoIosPower size="25" color="#fff"></IoIosPower>
+                </Link>
             </div>
         </Header>
     );

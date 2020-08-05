@@ -19,7 +19,6 @@ function Users() {
                 <div className="container">
                     <div className="Company">
                         <div className="infoCompany">
-                            <img clasName="logo" src={Logo}/>
                             <h2>Cadastrar Nova Empresa</h2>
                         </div>
                     </div>
@@ -46,11 +45,11 @@ function Users() {
                         <div className="box">
                             <div className="password">
                                 <h3>Senha</h3>
-                                <input type="text" placeholder="  Senha"></input>
+                                <input type="password" placeholder="  Senha"></input>
                             </div>
                             <div className="confirm">
                                 <h3>Confirmar Senha</h3>
-                                <input type="text" placeholder="  Confirmar senha"></input>
+                                <input type="password" placeholder="  Confirmar senha"></input>
                             </div>
                         </div>
 

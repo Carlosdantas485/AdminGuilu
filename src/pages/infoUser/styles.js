@@ -13,7 +13,6 @@ export const Container = styled.div`
         padding: 20px;
         margin: 15px;
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
 
         .user{

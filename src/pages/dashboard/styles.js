@@ -3,44 +3,45 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width:100%;
     height:100%;
-    margin-top: 40px;
+    background-color:white;
+    margin: 0;
 
     .container{
         display:flex;
-        justify-content:center;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column;
         img{
             width: 60%;
         }
 
         .back{
-                margin-top:20px;
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:130px;
-                height: 50px;
+                width:110px;
+                height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;
-                border-radius: 7px;
-                border:2px solid #ccc;
-                font-size: 20px;
-                background-color: #A8BC81 ;
-                color: #fff;
+                border-radius: 5px;
+                font-size: 17px;
+                background-color: #c4c4c4;
+                color: white;
+
             }
 
-        .back:hover{
-            background-color: #91aa5f;
-            transition: 0.3s;
+            .back:hover{
+                background-color: #b3b3b3;
+                transition: 0.3s;
+            }
+
+
+`;
+
+export const Header = styled.div`
+   .container{
+        #root{
+            margin: 0;
+
         }
     }
 
-    @media(max-width: 1200px){
-        .container{
-            img{
-                width: 96%;
-            }
-
-        }
-    }
 `;
