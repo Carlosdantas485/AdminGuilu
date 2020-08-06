@@ -71,16 +71,15 @@ export const Container = styled.div`
                 justify-content:center;
 
                 button{
-                margin-top: 15px;
-                border: none;
-                box-shadow: 1px 1px 2px grey;
-                width:130px;
-                height: 50px;
-                font-weight: bold;
-                padding: 5px 15px;
-                border-radius: 5px;
-                border:2px solid #fff;
-                font-size: 20px;
+                    margin-top: 20px;
+                    border: none;
+                    box-shadow: 1px 1px 2px grey;
+                    width:110px;
+                    height: 40px;
+                    font-weight: bold;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    font-size: 17px;
                 }
 
                 .recover{

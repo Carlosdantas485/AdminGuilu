@@ -44,19 +44,19 @@ export const Container = styled.div`
                 .back{
                     border: none;
                     box-shadow: 1px 1px 2px grey;
-                    width:110px;
+                    width:100px;
                     height: 40px;
                     font-weight: bold;
                     padding: 5px 15px;
                     border-radius: 5px;
                     font-size: 17px;
-                    background-color: #c4c4c4;
+                    background-color: #A1BF73;
                     color: white;
 
                 }
 
                 .back:hover{
-                    background-color: #b3b3b3;
+                    background-color: #84a84d;
                     transition: 0.3s;
                 }
 
@@ -89,6 +89,7 @@ export const Container = styled.div`
                     border: none;
                     background-color: #b3b3b3;
                     color: white;
+                    width: 110px;
                     height: 55px;
                     border-radius: 0px  10px 10px 0px
                 }
@@ -130,18 +131,24 @@ export const Container = styled.div`
 
             .import_pc{
                 width:100%;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+
             }
         }
+
 
         .options{
             margin-top: 25px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
 
             button{
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:110px;
+                width:100px;
                 height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;
@@ -149,16 +156,7 @@ export const Container = styled.div`
                 font-size: 17px;
             }
 
-            .back{
-                background-color: #c4c4c4;
-                color: white;
 
-            }
-
-            .back:hover{
-                background-color: #b3b3b3;
-                transition: 0.3s;
-            }
 
             .save{
                 background-color: #A1BF73;

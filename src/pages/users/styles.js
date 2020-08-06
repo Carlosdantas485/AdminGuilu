@@ -25,7 +25,7 @@ export const Container = styled.div`
             .back{
                 border: none;
                 box-shadow: 1px 1px 2px grey;
-                width:80px;
+                width:100px;
                 height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;

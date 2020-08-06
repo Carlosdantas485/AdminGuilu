@@ -11,7 +11,7 @@ import RecoverPassword2 from '../src/pages/recoverPassword/Page-2';
 import Users from './pages/users';
 import Company from './pages/company';
 import NewCompany from './pages/NewCompany';
-import NewDashboard from './pages/NewDashboard';
+import NewXML from './pages/NewXML';
 
 export default function Routes() {
     return (
@@ -27,7 +27,7 @@ export default function Routes() {
                 <Route path="/usersList" component={Users} />
                 <Route path="/company" component={Company} />
                 <Route path="/NewCompany" component={NewCompany} />
-                <Route path="/NewDashboard" component={NewDashboard} />
+                <Route path="/NewXML" component={NewXML} />
             </Switch>
         </BrowserRouter>
     );

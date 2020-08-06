@@ -79,7 +79,7 @@ function Home() {
                     <div className="box" id="archive">
                         <h1>Arquivos</h1>
                         <div className="Option_Home">
-                            <Link className="link" to="">
+                            <Link className="link" to="/NewXML">
                                 <h2>XML por Link</h2>
 
                                 <p className="info-box">Vizualize as principais informações.</p>

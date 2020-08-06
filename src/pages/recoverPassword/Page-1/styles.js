@@ -62,28 +62,27 @@ export const Container = styled.div`
                 justify-content:space-between;
 
                 button{
-                margin-top: 15px;
-                border: none;
-                box-shadow: 1px 1px 2px grey;
-                width:130px;
-                height: 50px;
-                font-weight: bold;
-                padding: 5px 15px;
-                border-radius: 5px;
-                border:2px solid #fff;
-                font-size: 20px;
+                    margin-top: 20px;
+                    border: none;
+                    box-shadow: 1px 1px 2px grey;
+                    width:110px;
+                    height: 40px;
+                    font-weight: bold;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    font-size: 17px;
                 }
 
                 .back{
-                    background-color: #696969;
-                    color: white;
+                background-color: #c4c4c4;
+                color: white;
 
-                }
+            }
 
-                .back:hover{
-                    background-color: #4F4F4F;
-                    transition: 0.3s;
-                }
+            .back:hover{
+                background-color: #b3b3b3;
+                transition: 0.3s;
+            }
 
                 .recover{
                     background-color: #A1BF73;

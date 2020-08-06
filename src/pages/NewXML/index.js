@@ -5,7 +5,7 @@ import Header from '../../Components/header';
 import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
-function Users() {
+function XML() {
     document.title = "Guilu - Cadastrar Empresa";
 
     const [showConfirm, setShowConfirm] = useState(false);
@@ -19,7 +19,7 @@ function Users() {
                 <div className="container">
                     <div className="Dashboard">
                         <div className="infoDashboard">
-                            <h2>Cadastrar Nova Empresa</h2>
+                            <h2>Cadastrar XML</h2>
                             <Link to="/home">
                                 <button className="back">Voltar</button>
                             </Link>
@@ -30,20 +30,20 @@ function Users() {
                         <div className="box">
                             <div className="XML_LINK">
                                 <h3>Link do XML</h3>
-                                <input type="text" placeholder=" Insira o link " ></input>
+                                <input type="text" placeholder=" Insira o link "  ></input>
                             </div>
                             <div className="import_pc">
                                 <h3>Arquivo do seu computador</h3>
                                 <div className="inport">
                                     <input type="text" placeholder=" Importar arquivo" ></input>
-                                    <button className="save" ><a href="" download="">Importar</a></button>
+                                    <button id="upload" ><a href="" download="">Importar</a></button>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                     <div className="options">
-                        <button className="save" >Cadastrar</button>
+                        <button className="save" >Adicionar</button>
                     </div>
                 </div>
             </Container>
@@ -76,4 +76,4 @@ function Users() {
     );
 }
 
-export default Users;
+export default XML;
