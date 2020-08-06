@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 import Header from '../../Components/header/index';
-import { FiAlertCircle } from "react-icons/fi";
 
 function Home() {
         document.title = "Guilu - Home";
@@ -22,19 +21,16 @@ function Home() {
                         <div className="Option_Home">
                             <Link className="link" to="newCompany">
                                 <h2>Registrar Empresa</h2>
-                                <div className="icon-info" id="show">
-                                    <FiAlertCircle size="20"  />
-                                </div>
-                                <p>Cadastre uma no empresa na plataforma da WIINNER. </p>
+                                <p className="info-box">
+                                    Cadastre uma no empresa na plataforma da WIINNER.
+                                </p>
                             </Link>
                         </div>
                         <div className="Option_Home">
                             <Link className="link" to="company">
                                 <h2>Listar Empresa</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>
+
+                                <p className="info-box">
                                     Veja a lista completa de todas as empresas
                                     participando da WIINNER.
                                 </p>
@@ -43,10 +39,8 @@ function Home() {
                         <div className="Option_Home">
                             <Link className="link" to="/newUser">
                                 <h2>Registrar Usuário</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>
+
+                                <p className="info-box">
                                     Cadastre um novo usuário pertencente a uma empresa.
                                 </p>
                             </Link>
@@ -54,10 +48,8 @@ function Home() {
                         <div className="Option_Home">
                             <Link className="link" to="/usersList">
                                 <h2>Listar Usuário</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>
+
+                                <p className="info-box">
                                     Veja todas as informações dos usuários
                                     cadastrados.
                                 </p>
@@ -69,19 +61,15 @@ function Home() {
                             <div className="Option_Home">
                                 <Link  className="link"to="/dashboard">
                                     <h2>Dashboard</h2>
-                                    <div className="icon-info">
-                                        <FiAlertCircle size="20" />
-                                    </div>
-                                    <p>Vizualize as principais informações.</p>
+
+                                    <p className="info-box">Vizualize as principais informações.</p>
                                 </Link>
                             </div>
                         <div className="Option_Home">
                             <Link className="link" to="/NewDashboard">
                                 <h2>Adicionar Dashboard</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>
+
+                                <p className="info-box">
                                     Adicione um Dashboard para obter várias informações
                                     importantes.
                                 </p>
@@ -93,19 +81,15 @@ function Home() {
                         <div className="Option_Home">
                             <Link className="link" to="">
                                 <h2>XML por Link</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>Vizualize as principais informações.</p>
+
+                                <p className="info-box">Vizualize as principais informações.</p>
                             </Link>
                         </div>
                         <div className="Option_Home">
                             <Link className="link" to="">
                                 <h2>Historico de uploads</h2>
-                                <div className="icon-info">
-                                    <FiAlertCircle size="20" />
-                                </div>
-                                <p>
+
+                                <p className="info-box">
                                     Adicione um Dashboard para obter várias informações
                                     importantes.
                                 </p>
@@ -113,6 +97,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
             </Container>
         </>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useHistory, Link } from 'react-router-dom';
 import { Container } from './styles';
-import Logo from '../../assets/logo.jpeg';
+import Logo from '../../assets/logo.png';
 function Login() {
     document.title = "Guilu";
 

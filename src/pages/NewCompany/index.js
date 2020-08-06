@@ -2,15 +2,55 @@ import React, {useState} from 'react';
 
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/logo.jpeg';
+import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 function Users() {
     document.title = "Guilu - Cadastrar Empresa";
 
     const [showDelete, setShowDelete] = useState(false);
-    const handleDeleteShow = () => {setShowDelete(true);};
+    const handleDeleteShow = () => setShowDelete(true);
     const handleDeleteClose = () => setShowDelete(false);
+
+    const [showPasswordDiferente, setShowPasswordDiferente] = useState(false);
+    const handlePasswordDiferenteShow = () => {setShowPasswordDiferente(true);};
+    const handlePasswordDiferenteClose = () => setShowPasswordDiferente(false);
+
+    const [showPasswordNull, setShowPasswordNull] = useState(false);
+    const handlePasswordNullShow = () => setShowPasswordNull(true);
+    const handlePasswordNullClose = () => setShowPasswordNull(false);
+
+    const [Validat, setValidat] = useState(false);
+    const handleValidatShow = () => setValidat(true);
+    const handleValidatClose = () => setValidat(false);
+
+    const [Password, setPassword] = useState('');
+    const [RePassword, setRePassword] = useState('');
+    const [NameCompany, setNameCompany] = useState('');
+    const [NameUser, setNameUser] = useState('');
+    const [EmailCompany, setEmailCompany] = useState('');
+
+    function submit(){
+
+        if(Password != RePassword){
+            handlePasswordDiferenteShow();
+
+            setTimeout(() => {
+                handlePasswordDiferenteClose()
+            }, 5000);
+
+        }
+        else if(Password.length == 0 || NameCompany.length == 0 || EmailCompany.length == 0 || NameUser.length == 0){
+            handlePasswordNullShow();
+
+            setTimeout(() => {
+                handlePasswordNullClose()
+            }, 5000);
+        }
+        else{
+            handleDeleteShow();
+        }
+    }
     return (
         <>
             <Header><div></div></Header>
@@ -27,38 +67,59 @@ function Users() {
                         <div className="box">
                             <div className="name">
                                 <h3>Nome Da Empresa</h3>
-                                <input type="text" placeholder=" Nome da empresa" ></input>
+                                <input type="text"
+                                 value={NameCompany}
+                                 onChange={(response) => setNameCompany(response.target.value)}
+                                 placeholder=" Nome da empresa"
+                                  required></input>
                             </div>
                             <div className="user">
                                 <h3>Usuário</h3>
-                                <input type="text" placeholder="  Nome do usuários" ></input>
+                                <input type="text"
+                                 value={NameUser}
+                                 onChange={(response) => setNameUser(response.target.value)}
+                                 placeholder=" Nome do usuários"
+                                  required></input>
                             </div>
                         </div>
 
                         <div className="box">
                             <div className="email">
                                 <h3>E-mail</h3>
-                                <input type="text" placeholder=" E-mail"></input>
+                                <input type="text"
+                                 value={EmailCompany}
+                                 onChange={(response) => setEmailCompany(response.target.value)}
+                                 placeholder=" E-mail"
+                                  required></input>
                             </div>
                         </div>
 
                         <div className="box">
                             <div className="password">
                                 <h3>Senha</h3>
-                                <input type="password" placeholder="  Senha"></input>
+                                <input type="password"
+                                    value={Password}
+                                    onChange={(response) => setPassword(response.target.value)}
+                                    placeholder=" Senha"
+                                    required
+                                />
                             </div>
                             <div className="confirm">
                                 <h3>Confirmar Senha</h3>
-                                <input type="password" placeholder="  Confirmar senha"></input>
+                                <input type="password" id="Valid"
+                                validat={Validat}
+                                value={RePassword}
+                                onChange={(response) => setRePassword(response.target.value)}
+                                placeholder=" Confirmar senha"
+                                required></input>
                             </div>
                         </div>
-
                     </div>
                     <div className="options">
                         <Link to="/home">
                             <button className="back">Voltar</button>
                         </Link>
-                            <button className="save" onClick={() => handleDeleteShow()}>Cadastrar</button>
+                            <button className="save" onClick={()=> submit()}>Cadastrar</button>
                     </div>
                 </div>
             </Container>
@@ -86,7 +147,21 @@ function Users() {
                 </button>
                 </div>
             </div>
-            </Actions>
+        </Actions>
+        <Actions open={showPasswordDiferente} onClose={handlePasswordDiferenteClose}>
+            <div className="containerModal">
+                <p className="titleModal">Senhas Diferentes</p>
+                <div className="line" />
+                <p>Por favor digite sua senha novamente !</p>
+            </div>
+        </Actions>
+        <Actions open={showPasswordNull} onClose={handlePasswordNullClose}>
+            <div className="containerModal">
+                <p className="titleModal">Erro ao cadastrar</p>
+                <div className="line" />
+                <p>Verifique se todos os campos estão preenchidos corretamente</p>
+            </div>
+        </Actions>
         </>
     );
 }

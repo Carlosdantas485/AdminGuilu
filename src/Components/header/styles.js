@@ -52,14 +52,17 @@ export const Header = styled.div`
         .exit1{
             width:40px;
             height:15px;
-            background-color: red;
+            background-color: #ff4749;
             padding: 8px 10px;
             border-radius:5px;
             margin-right:.6rem;
+            box-shadow: 1px 1px 2px grey;
+
 
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
     }
     .exit2{
@@ -76,13 +79,13 @@ export const Header = styled.div`
         padding-top: 20px;
 
         .exit2{
-
             width:80px;
             height:20px;
-            background-color: red;
+            background-color: #ff4749;
             padding: 8px 10px;
             border-radius:5px;
             margin-right:.6rem;
+            box-shadow: 1px 1px 2px grey;
 
             display: flex;
             justify-content: center;

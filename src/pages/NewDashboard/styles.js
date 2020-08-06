@@ -19,9 +19,6 @@ export const Container = styled.div`
         .Dashboard{
             margin:20px 0;
 
-
-
-
             h3{
                 margin:0;
                 font-size: 15px;
@@ -76,6 +73,25 @@ export const Container = styled.div`
                 font-size: 18px;
                 color: #A8BC81;
                 font-weight: bold;
+            }
+
+            .inport{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input{
+                    border-radius: 10px  0px 0px 10px
+                }
+                button{
+                    margin-top: 0.8rem;
+                    font-size: 15px;
+                    font-weight: bold;
+                    border: none;
+                    background-color: #b3b3b3;
+                    color: white;
+                    height: 55px;
+                    border-radius: 0px  10px 10px 0px
+                }
             }
 
             input{

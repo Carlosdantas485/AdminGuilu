@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { Modal } from '@material-ui/core';
+
 
 export const Container = styled.div`
     width: 100%;
@@ -67,6 +68,7 @@ export const Container = styled.div`
                 border: 1px solid #E2EAD4;
                 margin-top: 0.8rem;
                 font-size:18px;
+
                 ::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: #9ead82;
@@ -84,6 +86,16 @@ export const Container = styled.div`
                     /* Microsoft Edge */
                     color: #9ead82;
                     font-size: 19px;
+                }
+            }
+
+             #valid{
+                ${
+                    props => props.validat? css`
+                        border: 2px solid green;
+                    ` : css`
+                        border: 2px solid red;
+                    `
                 }
             }
 

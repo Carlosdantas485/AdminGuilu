@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles';
-import Logo from '../../../assets/logo.jpeg';
+import Logo from '../../../assets/logo.png';
 import {Link} from 'react-router-dom';
 
 function recoverPassword1() {

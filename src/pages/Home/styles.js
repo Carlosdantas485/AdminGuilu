@@ -8,6 +8,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
 
+
     .link{
         width: 100%;
         text-decoration:none;
@@ -18,6 +19,7 @@ export const Container = styled.div`
             display:flex;
             justify-content: flex-end;
         }
+
     }
 
     .container{
@@ -29,7 +31,7 @@ export const Container = styled.div`
 
     .box{
         width: 300px;
-        height: 660px;
+        height: 510px;
         padding: 5px 30px;
         background-color:#fff;
         border: 2px solid white;
@@ -49,15 +51,20 @@ export const Container = styled.div`
         }
 
         .Option_Home{
+            box-shadow: 1px 1px 2px grey;
             width: 280px;
-            height: 120px;
+            height: 80px;
             padding: 1px 25px;
             margin-top: 10px;
             background-color: #E2EAD4;
             transition: 0.3s;
-            .logo{
-                width: 100px;
+
+            .info-box{
+                width:100%;
+                display:none;
+                justify-content:center;
             }
+
             h2{
                 margin: 5px;
                 margin-top: 20px;
@@ -76,10 +83,15 @@ export const Container = styled.div`
             }
         }
         .Option_Home:hover{
+            width: 280px;
+            height: 100px;
             cursor: pointer;
-            transition: 0.3s;
+            transition: 0.5s;
             border:2px #A8BC81 solid;
-            transform: scale(1.03);
+
+            .info-box{
+                display:flex;
+            }
         }
 
     }
@@ -95,7 +107,12 @@ export const Container = styled.div`
                 display: flex;
                 align-items: center;
                 flex-direction:column;
+
+                .info-box{
+                    display:flex;
+                }
             }
+
 
         }
 

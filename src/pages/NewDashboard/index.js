@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/logo.jpeg';
+import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 function Users() {
@@ -34,15 +34,16 @@ function Users() {
                             </div>
                             <div className="import_pc">
                                 <h3>Arquivo do seu computador</h3>
-                                <input type="text" placeholder=" Importar arquivo" ></input>
+                                <div className="inport">
+                                    <input type="text" placeholder=" Importar arquivo" ></input>
+                                    <button className="save" ><a href="" download="">Importar</a></button>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                     <div className="options">
-                        <Link to="/home">
-                            <button className="back">Voltar</button>
-                        </Link>
-                            <button className="save" onClick={() => handleConfirmShow()}>Cadastrar</button>
+                        <button className="save" >Cadastrar</button>
                     </div>
                 </div>
             </Container>

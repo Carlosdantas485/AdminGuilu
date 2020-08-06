@@ -7,6 +7,7 @@ function App() {
         <>
             <Routes/>
             <GlobalStyle/>
+
         </>
     );
 }
