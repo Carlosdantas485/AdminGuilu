@@ -10,6 +10,7 @@ export const Container = styled.div`
     justify-content: center;
 
     .container{
+        width: 50%;
         padding: 20px;
         margin: 15px;
         background-color: #fff;
@@ -46,13 +47,13 @@ export const Container = styled.div`
         .inputs{
             width: 100%;
 
-            .box{
+            .box, .box-password{
                 margin-top: 10px;
                 display:flex;
-                flex-wrap:wrap;
+                flex-direction:column;
 
                 h3{
-                    margin:0;
+                    margin:10px 0;
                     font-size: 18px;
                     margin-bottom: 5px;
                     color: #A1BF73;
@@ -60,13 +61,15 @@ export const Container = styled.div`
                 }
 
                 input{
+                    width:100%;
                     background: #f2f1f1;
                     border-radius: 10px;
                     box-sizing: border-box;
                     padding: 1rem 0.7rem;
                     border: 1px solid #E2EAD4;
-                    margin-top: 0.8rem;
+                    margin-top: 5px;
                     font-size:18px;
+
                     ::placeholder {
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
                         color: #9ead82;
@@ -86,107 +89,21 @@ export const Container = styled.div`
                         font-size: 19px;
                     }
                 }
-                .name{
-                    width: 64%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-
-                }
-                .cel{
-                    width: 34%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .email{
-                    width: 50%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                    input{
-                        width:100%;
-                        border-right:0;
-                        border-radius:10px ;
-
-                    }
-
-                }
-
-                .cpf{
-                    width: 47%;
-                    display:flex;
-                    flex-direction:column;
-                    input{
-                        width:100%;
-                        border-right:0;
-                        border-radius:10px;
-
-                    }
-
-                }
-
-                .cep{
-                    width: 26%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-
-                }
-
-                .number{
-                    width: 16%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-
-                }
-
-                .complement{
-                    width: 54.5%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .bairro{
-                    width: 54%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .logradouro{
-                    width: 44%;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .city{
-                    width: 85%;
-                    margin-right:10px;
-                    display:flex;
-                    flex-direction:column;
-                }
-
-                .uf{
-                    display:flex;
-                    flex-direction:column;
-
-                    select{
-                        margin-top: 19px;
-                        width:100px;
-                        height:56px;
-                        font-size:20px;
-                        font-weight: bold;
-                        border-radius:10px;
-                        border: 1px solid #E2EAD4;
-                        background-color:grey;
-                        color: #fff;
-                    }
-                }
             }
 
+            .box-password{
+                flex-direction:row;
+                .password{
+                    width: 50%;
+                    margin-right: 10px;
+                }
+
+                .rePassword{
+                    width: 50%;
+                }
+            }
         }
+
         .options{
             margin-top: 25px;
             display: flex;
@@ -196,13 +113,12 @@ export const Container = styled.div`
                 border: none;
                 box-shadow: 1px 1px 2px grey;
                 margin-top: 20px;
-                width:130px;
-                height: 60px;
+                width:100px;
+                height: 40px;
                 font-weight: bold;
                 padding: 5px 15px;
                 border-radius: 7px;
-                border:2px solid #E2EAD4;
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .back{
@@ -317,7 +233,7 @@ export const Edit = styled(Modal)`
   .containerModal {
     width: 500px;
     height: 200px;
-    background-color: #E2EAD4;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -355,7 +271,6 @@ export const Edit = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
 
     }
@@ -370,9 +285,7 @@ export const Edit = styled(Modal)`
         font-weight: bold;
         padding: 5px 15px;
         border-radius: 7px;
-        border:2px solid #E2EAD4;
         font-size: 20px;
-
     }
 }
 `;

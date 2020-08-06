@@ -156,8 +156,6 @@ export const Container = styled.div`
                 font-size: 17px;
             }
 
-
-
             .save{
                 background-color: #A1BF73;
                 color: white;
@@ -167,39 +165,6 @@ export const Container = styled.div`
             .save:hover{
                 background-color: #84a84d;
                 transition: 0.3s;
-            }
-        }
-    }
-
-    @media(max-width: 1200px){
-        .container{
-            width:100%;
-            .box{
-                width:100%;
-                display: flex;
-                flex-direction:column;
-
-                .name{
-                    width:100%;
-                    margin-right: 20px;
-                }
-
-                .user{
-                    width:100%;
-                }
-
-                .email{
-                    width:100%;
-                }
-
-                .password{
-                    width:100%;
-                    margin-right: 20px;
-                }
-
-                .confirm{
-                    width:100%;
-                }
             }
         }
     }

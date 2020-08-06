@@ -81,18 +81,23 @@ export const Container = styled.div`
 
             button {
                 background: #b8cf8c;
+                width: 100px;
+                height: 40px;
                 color: #fff;
                 font-size: 20px;
-                font-weight: 500;
+                font-weight: bold;
                 font-family: 'Roboto' sans-serif;
                 box-sizing: border-box;
-                padding: 0.7rem 1.1rem;
                 border: none;
                 border-radius: 10px;
             }
 
             .recoverPassword{
                 color: #68970e;
+                font-weight: bold;
+                font-size: 15px;
+
+
             }
         }
     }

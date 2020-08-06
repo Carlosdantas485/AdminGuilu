@@ -6,7 +6,7 @@ import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 function XML() {
-    document.title = "Guilu - Cadastrar Empresa";
+    document.title = "Guilu - Cadastrar XML";
 
     const [showConfirm, setShowConfirm] = useState(false);
     const handleConfirmShow = () => {setShowConfirm(true);};
