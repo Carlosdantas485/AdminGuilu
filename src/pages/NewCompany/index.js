@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 function Users() {
@@ -20,9 +19,6 @@ function Users() {
     const handlePasswordNullShow = () => setShowPasswordNull(true);
     const handlePasswordNullClose = () => setShowPasswordNull(false);
 
-    const [Validat, setValidat] = useState(false);
-    const handleValidatShow = () => setValidat(true);
-    const handleValidatClose = () => setValidat(false);
 
     const [Password, setPassword] = useState('');
     const [RePassword, setRePassword] = useState('');
@@ -32,7 +28,7 @@ function Users() {
 
     function submit(){
 
-        if(Password != RePassword){
+        if(Password !== RePassword){
             handlePasswordDiferenteShow();
 
             setTimeout(() => {
@@ -40,7 +36,7 @@ function Users() {
             }, 5000);
 
         }
-        else if(Password.length == 0 || NameCompany.length == 0 || EmailCompany.length == 0 || NameUser.length == 0){
+        else if(Password.length === 0 || NameCompany.length === 0 || EmailCompany.length === 0 || NameUser.length === 0){
             handlePasswordNullShow();
 
             setTimeout(() => {
@@ -107,7 +103,6 @@ function Users() {
                             <div className="confirm">
                                 <h3>Confirmar Senha</h3>
                                 <input type="password" id="Valid"
-                                validat={Validat}
                                 value={RePassword}
                                 onChange={(response) => setRePassword(response.target.value)}
                                 placeholder=" Confirmar senha"

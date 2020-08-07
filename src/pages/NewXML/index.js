@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 
 import { Container, Actions } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+
+import Upload from '../../Components/Upload';
 
 function XML() {
     document.title = "Guilu - Cadastrar XML";
@@ -34,43 +35,42 @@ function XML() {
                             </div>
                             <div className="import_pc">
                                 <h3>Arquivo do seu computador</h3>
+
                                 <div className="inport">
                                     <input type="text" placeholder=" Importar arquivo" ></input>
-                                    <button id="upload" ><a href="" download="">Importar</a></button>
+                                    <button id="upload" ><Upload/></button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div className="options">
-                        <button className="save" >Adicionar</button>
+                        <button className="save" onClick={()=> handleConfirmShow()} >Adicionar</button>
                     </div>
                 </div>
             </Container>
 
-
-        <Actions open={showConfirm} onClose={handleConfirmClose}>
-            <div className="containerModal">
-                <p className="titleModal">Cadastrar Empresa</p>
-                <div className="line" />
-                <p>Gostaria de cadastrar esta empresa ?</p>
-                <div className="group">
-                <button
-                    type="button"
-                    className="back"
-                    onClick={()=>handleConfirmClose()}
-                >
-                    Não
-                </button>
-                <button
-                    type="submit"
-                    className="send"
-                    onClick={()=>handleConfirmClose()}
-                >
-                    Sim
-                </button>
+            <Actions open={showConfirm} onClose={handleConfirmClose}>
+                <div className="containerModal">
+                    <p className="titleModal">Cadastrar XML</p>
+                    <div className="line" />
+                    <p>Gostaria de cadastrar este XML ?</p>
+                    <div className="group">
+                    <button
+                        type="button"
+                        className="back"
+                        onClick={()=>handleConfirmClose()}
+                    >
+                        Não
+                    </button>
+                    <button
+                        type="submit"
+                        className="send"
+                        onClick={()=>handleConfirmClose()}
+                    >
+                        Sim
+                    </button>
+                    </div>
                 </div>
-            </div>
             </Actions>
         </>
     );

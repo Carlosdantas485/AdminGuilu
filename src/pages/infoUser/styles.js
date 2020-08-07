@@ -71,20 +71,17 @@ export const Container = styled.div`
                     font-size:18px;
 
                     ::placeholder {
-                        /* Chrome, Firefox, Opera, Safari 10.1+ */
                         color: #9ead82;
-                        opacity: 1; /* Firefox */
+                        opacity: 1;
                         font-size: 19px;
                     }
 
                     :-ms-input-placeholder {
-                        /* Internet Explorer 10-11 */
                         color: #9ead82;
                         font-size: 19px;
                     }
 
                     ::-ms-input-placeholder {
-                        /* Microsoft Edge */
                         color: #9ead82;
                         font-size: 19px;
                     }
@@ -93,6 +90,7 @@ export const Container = styled.div`
 
             .box-password{
                 flex-direction:row;
+
                 .password{
                     width: 50%;
                     margin-right: 10px;
@@ -122,7 +120,6 @@ export const Container = styled.div`
             }
 
             .back{
-
                 background-color: #696969;
                 color: #fff;
             }
@@ -147,24 +144,27 @@ export const Container = styled.div`
     @media(max-width: 768px){
         .container{
             width:100%;
+
             .user{
                 width:100%;
                 flex-direction:column;
                 text-align:center;
             }
+
             .inputs{
+
                 .box{
                     margin:0;
                     flex-direction:column;
+
                     h3{
                         margin-top:10px;
                     }
 
                     .name{
-                    width: 100%;
-
-
+                        width: 100%;
                     }
+
                     .cel{
                         width: 100%;
                     }
@@ -176,7 +176,6 @@ export const Container = styled.div`
                             border: 1px solid grey;
                             border-radius: 5px;
                         }
-
                     }
 
                     .cpf{
@@ -186,7 +185,6 @@ export const Container = styled.div`
                             border: 1px solid grey;
                             border-radius: 5px;
                         }
-
                     }
 
                     .cep{
@@ -195,7 +193,6 @@ export const Container = styled.div`
 
                     .number{
                         width: 100%;
-
                     }
 
                     .complement{
@@ -217,75 +214,72 @@ export const Container = styled.div`
                     .uf{
                         margin-top:10px;
                     }
-
                 }
-
             }
         }
-
     }
 `;
 
 export const Edit = styled(Modal)`
-  display: flex;
-  justify-content: center;
-
-  .containerModal {
-    width: 500px;
-    height: 200px;
-    background-color: #FFF;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 10%;
-    padding: 15px;
+    justify-content: center;
 
-  }
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 10%;
+        padding: 15px;
 
-  .titleModal {
-    font: 600 25px Mukta, sans-serif;
-    color: #000;
-    margin: 20px 0 15px;
-  }
+    }
 
-  .line {
-    border-bottom: 5px solid #000;
-    width: 10%;
-  }
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
+
+    .line {
+        border-bottom: 5px solid #000;
+        width: 10%;
+    }
 
     p{
         margin-top: 10px;
     }
-  .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
 
-    .back {
-        background-color: red;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:120px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:120px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
 
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:110px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+        }
     }
-
-    .send {
-        background-color: #A8BC81;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:110px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
-    }
-}
 `;

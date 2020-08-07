@@ -27,9 +27,7 @@ function Users() {
     const [Name, setName] = useState('');
     const [Email, setEmail] = useState('');
 
-    const [validat, setValidat] = useState(false);
-    const validatred = () =>  setValidat(false);
-    const validatgreen = () => setValidat(true);
+
 
     function submit(){
 
