@@ -37,8 +37,7 @@ function XML() {
                                 <h3>Arquivo do seu computador</h3>
 
                                 <div className="inport">
-                                    <input type="text" placeholder=" Importar arquivo" ></input>
-                                    <button id="upload" ><Upload/></button>
+                                    <Upload/>
                                 </div>
                             </div>
                         </div>
