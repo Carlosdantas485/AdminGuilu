@@ -6,6 +6,17 @@ import { IoMdAttach } from "react-icons/io";
 import { DropContainer, UploadMessager } from './styles';
 
 export default class Upload extends Component {
+    renderDragMessage = (isDragActivate, isDragReject) => {
+
+        if(!isDragActivate){
+            return <UploadMessager>arraste o arquivo...</UploadMessager>
+        }
+        if(isDragReject){
+            return <UploadMessager type="error">Arquivo nao suportado</UploadMessager>
+        }
+        return<UploadMessager type="success">solte o arquivo aqui</UploadMessager>
+
+    };
     render(){
         return (
             <Dropzone accept="image/*" onDropAccepted={()=> {}}>
@@ -18,7 +29,7 @@ export default class Upload extends Component {
 
                         <input { ...getInputProps()}/>
                         <IoMdAttach color="#ccc" size="30"></IoMdAttach>
-                        Importar Arquivo
+                       {this.renderDragMessage(isDragActivate, isDragReject)}
                     </DropContainer>
                 )}
             </Dropzone>
