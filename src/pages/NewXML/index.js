@@ -36,7 +36,7 @@ function XML() {
                             <div className="import_pc">
                                 <h3>Arquivo do seu computador</h3>
 
-                                <div className="inport">
+                                <div className="inports">
                                     <Upload/>
                                 </div>
                             </div>

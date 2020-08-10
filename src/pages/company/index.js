@@ -35,13 +35,12 @@ function Companys() {
                     </div>
                 </div>
                 <div className="list">
-
                     <div className="Company">
                         <div className="icon_Company">
-                            <p>C</p>
+                            <p>G</p>
                         </div>
                         <div className="infoCompany" >
-                            <h2>Company Guilu</h2>
+                            <h2>Guilu</h2>
                             <h2>Companyguilu@timeguilu.com</h2>
                         </div>
                         <div className="options">
@@ -51,11 +50,11 @@ function Companys() {
                     </div>
                     <div className="Company">
                         <div className="icon_Company">
-                            <p>C</p>
+                            <p>F</p>
                         </div>
                         <div className="infoCompany" >
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h2>carlosdantas485@timeguilu.com</h2>
+                            <h2>Florescer</h2>
+                            <h2>Florescer@timeguilu.com</h2>
                         </div>
                         <div className="options">
                             <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
@@ -64,18 +63,134 @@ function Companys() {
                     </div>
                     <div className="Company">
                         <div className="icon_Company">
-                            <p>C</p>
+                            <p>W</p>
                         </div>
                         <div className="infoCompany" >
-                            <h2>Carlos Alberto Dantas Filho</h2>
-                            <h2>carlosdantas485@timeguilu.com</h2>
+                            <h2>Winner</h2>
+                            <h2>winner@timeguilu.com</h2>
                         </div>
                         <div className="options">
                             <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
                             <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
                         </div>
                     </div>
-
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>G</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Guilu</h2>
+                            <h2>Companyguilu@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>F</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Florescer</h2>
+                            <h2>Florescer@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>W</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Winner</h2>
+                            <h2>winner@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>G</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Guilu</h2>
+                            <h2>Companyguilu@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>F</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Florescer</h2>
+                            <h2>Florescer@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>W</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Winner</h2>
+                            <h2>winner@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>G</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Guilu</h2>
+                            <h2>Companyguilu@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>F</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Florescer</h2>
+                            <h2>Florescer@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="Company">
+                        <div className="icon_Company">
+                            <p>W</p>
+                        </div>
+                        <div className="infoCompany" >
+                            <h2>Winner</h2>
+                            <h2>winner@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Container>

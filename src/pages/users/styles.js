@@ -33,6 +33,7 @@ export const Container = styled.div`
                 font-size: 17px;
                 background-color: #A8BC81 ;
                 color: #fff;
+                outline: 0;
             }
 
             .back:hover{
@@ -85,7 +86,7 @@ export const Container = styled.div`
                     font-weight:bold;
                     border-radius: 50%;
                     border: 4px double white;
-                    background-color: grey;
+                    background-color:  #91aa5f;
                     color: white;
                 }
 
@@ -140,10 +141,9 @@ export const Actions = styled(Modal)`
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     margin-top: 10%;
     padding: 15px;
-
+    outline:0;
   }
 
   .titleModal {
@@ -178,7 +178,7 @@ export const Actions = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
-
+        outline:0;
     }
 
     .send {
@@ -192,7 +192,7 @@ export const Actions = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
-
+        outline:0;
     }
 }
 `;
@@ -207,10 +207,9 @@ export const Edit = styled(Modal)`
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     margin-top: 10%;
     padding: 15px;
-
+    outline:0;
   }
 
   .titleModal {
@@ -237,6 +236,8 @@ export const Edit = styled(Modal)`
             border: 1px solid #E2EAD4;
             margin-top: 0.8rem;
             font-size:18px;
+            outline:0;
+
             ::placeholder {
                 color: #9ead82;
                 opacity: 1; /* Firefox */
@@ -271,7 +272,7 @@ export const Edit = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
-
+        outline:0;
     }
 
     .send {
@@ -285,7 +286,7 @@ export const Edit = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
-
+        outline:0;
     }
 }
 `;

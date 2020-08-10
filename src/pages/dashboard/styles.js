@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 
     width:100%;
-    height:100%;
+    height:100vh;
     background-color:black;
     margin: 0;
 
@@ -17,7 +17,8 @@ export const Container = styled.div`
         }
 
         .back{
-             border: none;
+            border: none;
+            margin: 10px;
             box-shadow: 1px 1px 2px grey;
             width:110px;
             height: 40px;
@@ -33,9 +34,6 @@ export const Container = styled.div`
             background-color: #b3b3b3;
             transition: 0.3s;
         }
-        .inports{
-        margin-top: 10px;
-    }
 
     }
 

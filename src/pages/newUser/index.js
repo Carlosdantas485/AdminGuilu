@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
-import { Container, Actions } from './styles';
+import { Container, Actions, AcceptedModal } from './styles';
 import Header from '../../Components/header';
-import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 
 
 function Users() {
     document.title = "Guilu - Cadastrar Usuário";
 
-    const [showDelete, setShowDelete] = useState(false);
-    const handleDeleteShow = () => setShowDelete(true);
-    const handleDeleteClose = () => setShowDelete(false);
+    const [showAccepted, setShowAccepted] = useState(false);
+    const handleAcceptedShow = () => setShowAccepted(true);
+    const handleAcceptedClose = () => setShowAccepted(false);
 
     const [showPasswordDiferente, setShowPasswordDiferente] = useState(false);
     const handlePasswordDiferenteShow = () => {
@@ -31,7 +30,7 @@ function Users() {
 
     function submit(){
 
-        if(Password != RePassword){
+        if(Password !== RePassword){
             handlePasswordDiferenteShow();
 
             setTimeout(() => {
@@ -39,7 +38,7 @@ function Users() {
             }, 5000);
 
         }
-        else if(Password.length == 0 || Name.length == 0 || Email.length == 0){
+        else if(Password.length === 0 || Name.length === 0 || Email.length === 0){
             handlePasswordNullShow();
 
             setTimeout(() => {
@@ -47,7 +46,7 @@ function Users() {
             }, 5000);
         }
         else{
-            handleDeleteShow();
+            handleAcceptedShow();
         }
     }
     return (
@@ -58,7 +57,6 @@ function Users() {
                 <div className="container">
                     <div className="Company">
                         <div className="infoCompany">
-                            <img clasName="logo" src={Logo}/>
                             <h2>Cadastrar Novo Usuário</h2>
                         </div>
                     </div>
@@ -119,7 +117,7 @@ function Users() {
             </Container>
 
 
-        <Actions  open={showDelete} onClose={handleDeleteClose}>
+        <AcceptedModal open={showAccepted} onClose={handleAcceptedClose}>
             <div className="containerModal">
                 <p className="titleModal">Cadastrar Usuário</p>
                 <div className="line" />
@@ -128,20 +126,20 @@ function Users() {
                 <button
                     type="button"
                     className="back"
-                    onClick={()=>handleDeleteClose()}
+                    onClick={()=>handleAcceptedClose()}
                 >
                     Não
                 </button>
                 <button
                     type="submit"
                     className="send"
-                    onClick={()=>handleDeleteClose()}
+                    onClick={()=>handleAcceptedClose()}
                 >
                     Sim
                 </button>
                 </div>
             </div>
-        </Actions>
+        </AcceptedModal>
         <Actions open={showPasswordDiferente} onClose={handlePasswordDiferenteClose}>
             <div className="containerModal">
                 <p className="titleModal">Senhas Diferentes</p>

@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 
-import { Container, Actions } from './styles';
+import { Container, Actions, AcceptedModal } from './styles';
 import Header from '../../Components/header';
 import { Link } from 'react-router-dom';
 
 function Users() {
     document.title = "Guilu - Cadastrar Empresa";
 
-    const [showDelete, setShowDelete] = useState(false);
-    const handleDeleteShow = () => setShowDelete(true);
-    const handleDeleteClose = () => setShowDelete(false);
+    const [showAccepted, setShowAccepted] = useState(false);
+    const handleAcceptedShow = () => setShowAccepted(true);
+    const handleAcceptedClose = () => setShowAccepted(false);
 
     const [showPasswordDiferente, setShowPasswordDiferente] = useState(false);
     const handlePasswordDiferenteShow = () => {setShowPasswordDiferente(true);};
@@ -44,7 +44,7 @@ function Users() {
             }, 5000);
         }
         else{
-            handleDeleteShow();
+            handleAcceptedShow();
         }
     }
     return (
@@ -120,7 +120,7 @@ function Users() {
             </Container>
 
 
-        <Actions open={showDelete} onClose={handleDeleteClose}>
+        <AcceptedModal open={showAccepted} onClose={handleAcceptedClose}>
             <div className="containerModal">
                 <p className="titleModal">Cadastrar Empresa</p>
                 <div className="line" />
@@ -129,20 +129,20 @@ function Users() {
                 <button
                     type="button"
                     className="back"
-                    onClick={()=>handleDeleteClose()}
+                    onClick={()=>handleAcceptedClose()}
                 >
                     Não
                 </button>
                 <button
                     type="submit"
                     className="send"
-                    onClick={()=>handleDeleteClose()}
+                    onClick={()=>handleAcceptedClose()}
                 >
                     Sim
                 </button>
                 </div>
             </div>
-        </Actions>
+        </AcceptedModal>
         <Actions open={showPasswordDiferente} onClose={handlePasswordDiferenteClose}>
             <div className="containerModal">
                 <p className="titleModal">Senhas Diferentes</p>

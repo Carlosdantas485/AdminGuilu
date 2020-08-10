@@ -60,31 +60,38 @@ export const Container = styled.div`
                     font-weight: bold;
                 }
 
-                input{
+                input {
                     width:100%;
                     background: #f2f1f1;
-                    border-radius: 10px;
                     box-sizing: border-box;
                     padding: 1rem 0.7rem;
                     border: 1px solid #E2EAD4;
-                    margin-top: 5px;
+                    border-bottom: 2px solid #9ead82;
+                    margin-top: 0.8rem;
                     font-size:18px;
 
                     ::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
                         color: #9ead82;
-                        opacity: 1;
+                        opacity: 1; /* Firefox */
                         font-size: 19px;
                     }
 
                     :-ms-input-placeholder {
+                        /* Internet Explorer 10-11 */
                         color: #9ead82;
                         font-size: 19px;
                     }
 
                     ::-ms-input-placeholder {
+                        /* Microsoft Edge */
                         color: #9ead82;
                         font-size: 19px;
                     }
+                }
+
+                input:focus{
+                    outline: 0;
                 }
             }
 
@@ -123,15 +130,22 @@ export const Container = styled.div`
                 background-color: #696969;
                 color: #fff;
             }
+            .back:focus{
+                outline: 0;
+            }
 
             .back:hover{
                 background-color: #4F4F4F;
                 transition: 0.3s;
             }
 
+
             .save{
                 background-color: #A1BF73;
                 color: #fff;
+            }
+            .save:focus{
+                outline: 0;
             }
 
             .save:hover{
@@ -230,10 +244,13 @@ export const Edit = styled(Modal)`
         background-color: #FFF;
         display: flex;
         flex-direction: column;
-        border-radius: 10px;
         margin-top: 10%;
         padding: 15px;
 
+    }
+
+    .containerModal:focus{
+        outline: 0;
     }
 
     .titleModal {
@@ -268,6 +285,9 @@ export const Edit = styled(Modal)`
             font-size: 20px;
 
         }
+        .back:focus{
+            outline: 0;
+        }
 
         .send {
             background-color: #A8BC81;
@@ -280,6 +300,9 @@ export const Edit = styled(Modal)`
             padding: 5px 15px;
             border-radius: 7px;
             font-size: 20px;
+        }
+        .send:focus{
+            outline: 0;
         }
     }
 `;

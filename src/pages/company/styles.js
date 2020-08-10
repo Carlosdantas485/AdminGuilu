@@ -35,7 +35,9 @@ export const Container = styled.div`
                 background-color: #A8BC81 ;
                 color: #fff;
             }
-
+            .back:focus{
+                outline: 0;
+            }
             .back:hover{
                 background-color: #91aa5f;
                 transition: 0.3s;
@@ -85,8 +87,8 @@ export const Container = styled.div`
                     font-size: 35px;
                     font-weight:bold;
                     border-radius: 50%;
-                    border: 4px double white;
-                    background-color: grey;
+                    border: 5px double white;
+                    background-color:  #91aa5f;
                     color: white;
                 }
 
@@ -132,162 +134,165 @@ export const Container = styled.div`
 `;
 
 export const Actions = styled(Modal)`
-  display: flex;
-  justify-content: center;
-
-  .containerModal {
-    width: 500px;
-    height: 200px;
-    background-color: #fff;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 10%;
-    padding: 15px;
+    justify-content: center;
 
-  }
-
-  .titleModal {
-    font: 600 25px Mukta, sans-serif;
-    color: #000;
-    margin: 20px 0 15px;
-  }
-
-  .line {
-    border-bottom: 5px solid #000;
-    width: 10%;
-  }
-
-  p {
-    margin-top: 15px;
-    font-weight:bold;
-  }
-
-  .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-
-    .back {
-        background-color: red;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:120px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
-
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+    }
+    .containerModal:focus{
+            outline: 0;
     }
 
-    .send {
-        background-color: #A8BC81;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:120px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
-
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
     }
-}
+
+    .line {
+        border-bottom: 5px solid #000;
+        width: 10%;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight:bold;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:120px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:120px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+    }
 `;
 
 export const Edit = styled(Modal)`
-  display: flex;
-  justify-content: center;
-
-  .containerModal {
-    width: 500px;
-    height: 300px;
-    background-color: #fff;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 10%;
-    padding: 15px;
+    justify-content: center;
 
-  }
+    .containerModal {
+        width: 500px;
+        height: 300px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+    }
+    .containerModal:focus{
+        outline: 0;
+    }
 
-  .titleModal {
-    font: 600 25px Mukta, sans-serif;
-    color: #000;
-    margin: 20px 0 15px;
-  }
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
 
-  .line {
-    border-bottom: 5px solid #000;
-    width: 10%;
-  }
+    .line {
+        border-bottom: 5px solid #000;
+        width: 10%;
+    }
 
-    .inputs-modal{
-        margin-top: 10px;
-        display:flex;
-        flex-direction:column;
+        .inputs-modal{
+            margin-top: 10px;
+            display:flex;
+            flex-direction:column;
 
-        input{
-            background: #f2f1f1;
-            border-radius: 10px;
-            box-sizing: border-box;
-            padding: 1rem 0.7rem;
-            border: 1px solid #E2EAD4;
-            margin-top: 0.8rem;
-            font-size:18px;
-            ::placeholder {
-                color: #9ead82;
-                opacity: 1; /* Firefox */
-                font-size: 19px;
-            }
+            input{
+                background: #f2f1f1;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 1rem 0.7rem;
+                border: 1px solid #E2EAD4;
+                margin-top: 0.8rem;
+                font-size:18px;
+                ::placeholder {
+                    color: #9ead82;
+                    opacity: 1; /* Firefox */
+                    font-size: 19px;
+                }
 
-            :-ms-input-placeholder {
-                color: #9ead82;
-                font-size: 19px;
-            }
+                :-ms-input-placeholder {
+                    color: #9ead82;
+                    font-size: 19px;
+                }
 
-            ::-ms-input-placeholder {
-                color: #9ead82;
-                font-size: 19px;
+                ::-ms-input-placeholder {
+                    color: #9ead82;
+                    font-size: 19px;
+                }
             }
         }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:120px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:110px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
     }
-
-  .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-
-    .back {
-        background-color: red;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:120px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
-
-    }
-
-    .send {
-        background-color: #A8BC81;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:110px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
-
-    }
-}
 `;
 

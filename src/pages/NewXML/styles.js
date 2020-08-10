@@ -52,6 +52,8 @@ export const Container = styled.div`
                     font-size: 17px;
                     background-color: #A1BF73;
                     color: white;
+                    outline:0;
+
 
                 }
 
@@ -79,9 +81,7 @@ export const Container = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                input{
-                    border-radius: 10px  0px 0px 10px
-                }
+
                 button{
                     margin-top: 0.8rem;
                     font-size: 15px;
@@ -92,18 +92,23 @@ export const Container = styled.div`
                     width: 110px;
                     height: 55px;
                     border-radius: 0px  10px 10px 0px
+                    outline:0;
+
                 }
             }
 
-            input{
+            input {
                 width:100%;
                 background: #f2f1f1;
-                border-radius: 10px;
                 box-sizing: border-box;
                 padding: 1rem 0.7rem;
                 border: 1px solid #E2EAD4;
+                border-bottom: 2px solid #9ead82;
                 margin-top: 0.8rem;
                 font-size:18px;
+                outline:0;
+
+
                 ::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: #9ead82;
@@ -154,6 +159,8 @@ export const Container = styled.div`
                 padding: 5px 15px;
                 border-radius: 5px;
                 font-size: 17px;
+                outline:0;
+
             }
 
             .save{
@@ -182,9 +189,9 @@ export const Actions = styled(Modal)`
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     margin-top: 10%;
     padding: 15px;
+    outline:0;
 
   }
 
@@ -220,6 +227,7 @@ export const Actions = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
+        outline:0;
 
     }
 
@@ -234,6 +242,7 @@ export const Actions = styled(Modal)`
         padding: 5px 15px;
         border-radius: 7px;
         font-size: 20px;
+        outline:0;
 
     }
 }

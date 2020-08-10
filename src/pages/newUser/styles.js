@@ -57,15 +57,18 @@ export const Container = styled.div`
                 font-weight: bold;
             }
 
-            input{
+            input {
                 width:100%;
                 background: #f2f1f1;
-                border-radius: 10px;
                 box-sizing: border-box;
                 padding: 1rem 0.7rem;
                 border: 1px solid #E2EAD4;
+                border-bottom: 2px solid #9ead82;
                 margin-top: 0.8rem;
                 font-size:18px;
+                outline:0;
+
+
                 ::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: #9ead82;
@@ -118,6 +121,8 @@ export const Container = styled.div`
                 padding: 5px 15px;
                 border-radius: 5px;
                 font-size: 17px;
+                outline:0;
+
             }
 
             .back{
@@ -177,71 +182,141 @@ export const Container = styled.div`
 
 
 export const Actions = styled(Modal)`
-  display: flex;
-  justify-content: center;
-
-
-  .containerModal {
-    width: 500px;
-    height: 200px;
-    background-color: #fff;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 10%;
-    padding: 15px;
+    justify-content: center;
 
-  }
 
-  .titleModal {
-    font: 600 25px Mukta, sans-serif;
-    color: #000;
-    margin: 20px 0 15px;
-  }
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+        outline:0;
 
-  .line {
-    border-bottom: 5px solid #000;
-    width: 10%;
-  }
-
-  p {
-    margin-top: 15px;
-    font-weight:bold;
-  }
-
-  .group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-
-    .back {
-        background-color: red;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:100px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
 
     }
 
-    .send {
-        background-color: #A8BC81;
-        color: #fff;
-        border: none;
-        box-shadow: 1px 1px 2px grey;
-        width:100px;
-        height: 40px;
-        font-weight: bold;
-        padding: 5px 15px;
-        border-radius: 7px;
-        font-size: 20px;
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
+
+    .line {
+        border-bottom: 5px solid red;
+        width: 20%;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight:bold;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+    }
+`;
+
+export const AcceptedModal = styled(Modal)`
+    display: flex;
+    justify-content: center;
+
+
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+        outline:0;
+
 
     }
-}
+
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
+
+    .line {
+        border-bottom: 5px solid #A1BF73;
+        width: 20%;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight:bold;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline:0;
+        }
+    }
 `;
 
 

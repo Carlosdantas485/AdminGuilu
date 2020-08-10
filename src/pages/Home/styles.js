@@ -100,9 +100,12 @@ export const Container = styled.div`
     @media(max-width: 1200px){
         .box{
             width: 100%;
+            padding-bottom: 10px;
 
             .Option_Home{
-                width: 90%;
+                width: 100%;
+                height:100%;
+
 
                 display: flex;
                 align-items: center;
@@ -112,7 +115,6 @@ export const Container = styled.div`
                     display:flex;
                 }
             }
-
 
         }
 

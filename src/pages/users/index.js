@@ -36,13 +36,39 @@ function Users() {
                 </div>
                 <div className="list">
 
-                <div className="user">
+                    <div className="user">
                         <div className="icon_user">
                             <p>C</p>
                         </div>
                         <div className="infoUser" >
                             <h2>Carlos Alberto Dantas Filho</h2>
                             <h2>carlosdantas485@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>T</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Thiago C. Melo</h2>
+                            <h2>thiago@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>L</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Lukas G.</h2>
+                            <h2>Lukao@timeguilu.com</h2>
                         </div>
                         <div className="options">
                             <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
@@ -64,11 +90,102 @@ function Users() {
                     </div>
                     <div className="user">
                         <div className="icon_user">
+                            <p>T</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Thiago C. Melo</h2>
+                            <h2>thiago@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>L</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Lukas G.</h2>
+                            <h2>Lukao@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
                             <p>C</p>
                         </div>
                         <div className="infoUser" >
                             <h2>Carlos Alberto Dantas Filho</h2>
                             <h2>carlosdantas485@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>T</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Thiago C. Melo</h2>
+                            <h2>thiago@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>L</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Lukas G.</h2>
+                            <h2>Lukao@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>C</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Carlos Alberto Dantas Filho</h2>
+                            <h2>carlosdantas485@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>T</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Thiago C. Melo</h2>
+                            <h2>thiago@timeguilu.com</h2>
+                        </div>
+                        <div className="options">
+                            <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>
+                            <MdDelete size="20" className="icon" onClick={() => handleDeleteShow()}/>
+                        </div>
+                    </div>
+                    <div className="user">
+                        <div className="icon_user">
+                            <p>L</p>
+                        </div>
+                        <div className="infoUser" >
+                            <h2>Lukas G.</h2>
+                            <h2>Lukao@timeguilu.com</h2>
                         </div>
                         <div className="options">
                             <FiEdit2 size="20" className="icon" id="pen" onClick={() => handleEditShow()}/>

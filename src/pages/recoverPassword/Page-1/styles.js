@@ -12,7 +12,6 @@ export const Container = styled.div`
         padding: 20px;
         margin: 15px;
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: 1px 1px 2px grey;
 
         .div-logo{
@@ -27,15 +26,18 @@ export const Container = styled.div`
             display:flex;
             flex-direction: column;
 
-            input{
+            input {
                 width:100%;
                 background: #f2f1f1;
-                border-radius: 10px;
                 box-sizing: border-box;
                 padding: 1rem 0.7rem;
                 border: 1px solid #E2EAD4;
+                border-bottom: 2px solid #9ead82;
                 margin-top: 0.8rem;
                 font-size:18px;
+                outline:0;
+
+
                 ::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
                     color: #9ead82;
@@ -71,23 +73,25 @@ export const Container = styled.div`
                     padding: 5px 15px;
                     border-radius: 5px;
                     font-size: 17px;
+                    outline:0;
+
                 }
 
                 .back{
-                background-color: #c4c4c4;
-                color: white;
+                    background-color: #c4c4c4;
+                    color: white;
 
-            }
+                }
 
-            .back:hover{
-                background-color: #b3b3b3;
-                transition: 0.3s;
-            }
+                .back:hover{
+                    background-color: #b3b3b3;
+                    transition: 0.3s;
+                }
 
                 .recover{
                     background-color: #A1BF73;
                     color: white;
-
+                    outline:0;
                 }
 
                 .recover:hover{
