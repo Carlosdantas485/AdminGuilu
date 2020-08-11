@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { FaUserCircle } from 'react-icons/fa';
 import { Header } from './styles';
-import { IoIosPower } from "react-icons/io";
+import { RiLogoutBoxLine } from "react-icons/ri";
 import Logo from '../../assets/logo.png';
 
 function header(){
@@ -22,14 +22,14 @@ function header(){
                 </div>
                 <Link to="/" className="exit1">
                     <div >
-                        <IoIosPower size="25" color="#fff"></IoIosPower>
+                        <RiLogoutBoxLine size="25" color="#fff"></RiLogoutBoxLine>
                     </div>
                 </Link>
 
             </div>
             <Link to="/" className="exit2">
                 <div >
-                    <IoIosPower size="25" color="#fff"></IoIosPower>
+                    <RiLogoutBoxLine size="25" color="#fff"></RiLogoutBoxLine>
                 </div>
             </Link>
 

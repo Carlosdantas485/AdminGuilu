@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Modal } from '@material-ui/core';
 
 export const Container = styled.div`
     display: flex;
@@ -104,7 +105,138 @@ export const Container = styled.div`
             width: 80%;
         }
     }
-
-
-
 `;
+
+
+export const Actions = styled(Modal)`
+    display: flex;
+    justify-content: center;
+
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+        outline: 0;
+    }
+
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
+
+    .line {
+        border-bottom: 5px solid red;
+        width: 10%;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight:bold;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline: 0;
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline: 0;
+        }
+    }
+`;
+
+export const AcceptedModal = styled(Modal)`
+    display: flex;
+    justify-content: center;
+
+    .containerModal {
+        width: 500px;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 15px;
+        outline: 0;
+    }
+
+    .titleModal {
+        font: 600 25px Mukta, sans-serif;
+        color: #000;
+        margin: 20px 0 15px;
+    }
+
+    .line {
+        border-bottom: 5px solid #A8BC81;
+        width: 10%;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight:bold;
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .back {
+            background-color: red;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline: 0;
+        }
+
+        .send {
+            background-color: #A8BC81;
+            color: #fff;
+            border: none;
+            box-shadow: 1px 1px 2px grey;
+            width:100px;
+            height: 40px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 20px;
+            outline: 0;
+        }
+    }
+`;
+

@@ -9,12 +9,12 @@ export default class Upload extends Component {
     renderDragMessage = (isDragActivate, isDragReject) => {
 
         if(!isDragActivate){
-            return <UploadMessager>arraste o arquivo...</UploadMessager>
+            return <UploadMessager>Arraste o arquivo...</UploadMessager>
         }
         if(isDragReject){
             return <UploadMessager type="error">Arquivo nao suportado</UploadMessager>
         }
-        return<UploadMessager type="success">solte o arquivo aqui</UploadMessager>
+        return<UploadMessager type="success">Solte o arquivo aqui</UploadMessager>
 
     };
     render(){
@@ -28,7 +28,6 @@ export default class Upload extends Component {
                     >
 
                         <input { ...getInputProps()}/>
-                        <IoMdAttach color="#ccc" size="30"></IoMdAttach>
                        {this.renderDragMessage(isDragActivate, isDragReject)}
                     </DropContainer>
                 )}

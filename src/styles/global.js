@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-circular-progressbar/dist/styles.css';
+
 export const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;

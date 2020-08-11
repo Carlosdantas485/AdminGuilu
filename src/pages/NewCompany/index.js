@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 
+
 import { Container, Actions, AcceptedModal } from './styles';
 import Header from '../../Components/header';
 import { Link } from 'react-router-dom';

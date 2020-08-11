@@ -14,12 +14,6 @@ export const Container = styled.div`
         text-decoration:none;
         text-align:center;
 
-        .icon-info{
-            width: 100%;
-            display:flex;
-            justify-content: flex-end;
-        }
-
     }
 
     .container{

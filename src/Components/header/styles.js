@@ -55,7 +55,7 @@ export const Header = styled.div`
             width:40px;
             height:15px;
             background-color: #ff5758;
-            padding: 8px 10px;
+            padding: 10px 5px;
             margin-right:.6rem;
             box-shadow: 1px 1px 2px grey;
 
@@ -83,7 +83,7 @@ export const Header = styled.div`
             width:80px;
             height:20px;
             background-color:#ff5758;
-            padding: 8px 10px;
+            padding: 10px 5px;
             border-radius:5px;
             margin-right:.6rem;
             box-shadow: 1px 1px 2px grey;

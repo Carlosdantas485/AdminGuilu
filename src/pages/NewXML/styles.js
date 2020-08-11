@@ -1,5 +1,33 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Modal } from '@material-ui/core';
+
+const dragActive = css`
+    border-color:#78e5d5;
+`;
+
+const dragReject = css`
+    border-color:#e57878;
+`;
+
+export const DropContainer= styled.div.attrs({
+    className:"dropzone"
+    })`
+
+    border-radius: 4px;
+    border: 1px dashed #ddd;
+    margin-top: 20px;
+    outline: 0;
+    cursor:pointer;
+
+    transition: height 0.2s ease;
+
+    ${props => props.isDragActive && dragActive};
+    ${props => props.isDragReject && dragReject};
+`;
+
+export const UploadMessager = styled.p`
+
+`;
 
 export const Container = styled.div`
     width: 100%;
@@ -77,25 +105,7 @@ export const Container = styled.div`
                 font-weight: bold;
             }
 
-            .inport{
-                display: flex;
-                align-items: center;
-                justify-content: center;
 
-                button{
-                    margin-top: 0.8rem;
-                    font-size: 15px;
-                    font-weight: bold;
-                    border: none;
-                    background-color: #b3b3b3;
-                    color: white;
-                    width: 110px;
-                    height: 55px;
-                    border-radius: 0px  10px 10px 0px
-                    outline:0;
-
-                }
-            }
 
             input {
                 width:100%;
@@ -136,9 +146,15 @@ export const Container = styled.div`
 
             .import_pc{
                 width:100%;
-                a{
-                    color: #fff;
-                    text-decoration: none;
+                .inports{
+                    width:100%;
+                    background: #fff;
+                    border-radius:4px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                 }
 
             }
@@ -175,6 +191,14 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media(max-width:1200px){
+        .container{
+            width:100%;
+        }
+    }
+
+
 
 `;
 
@@ -247,6 +271,8 @@ export const Actions = styled(Modal)`
     }
 }
 `;
+
+
 
 
 

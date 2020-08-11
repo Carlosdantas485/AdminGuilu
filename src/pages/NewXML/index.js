@@ -5,6 +5,7 @@ import Header from '../../Components/header';
 import { Link } from 'react-router-dom';
 
 import Upload from '../../Components/Upload';
+// import FileList from '../../Components/FileList';
 
 function XML() {
     document.title = "Guilu - Cadastrar XML";
@@ -38,6 +39,7 @@ function XML() {
 
                                 <div className="inports">
                                     <Upload/>
+                                    {/* <FileList/> */}
                                 </div>
                             </div>
                         </div>
