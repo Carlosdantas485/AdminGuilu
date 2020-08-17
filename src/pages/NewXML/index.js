@@ -4,8 +4,7 @@ import { Container, Actions } from './styles';
 import Header from '../../Components/header';
 import { Link } from 'react-router-dom';
 
-import Upload from '../../Components/Upload';
-// import FileList from '../../Components/FileList';
+
 
 function XML() {
     document.title = "Guilu - Cadastrar XML";
@@ -36,11 +35,7 @@ function XML() {
                             </div>
                             <div className="import_pc">
                                 <h3>Arquivo do seu computador</h3>
-
-                                <div className="inports">
-                                    <Upload/>
-                                    {/* <FileList/> */}
-                                </div>
+                                <input type="file" id="file" accept=".xml"/>
                             </div>
                         </div>
                     </div>

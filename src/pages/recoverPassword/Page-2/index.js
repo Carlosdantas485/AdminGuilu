@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 
 import { Container, Actions, AcceptedModal } from './styles';
 import Logo from '../../../assets/logo.png';
-import { Link } from 'react-router-dom';
 
 function Users() {
     document.title = "Guilu - Cadastrar Empresa";
